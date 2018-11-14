@@ -1,0 +1,1 @@
+if !argument0 then actionScript = action_playerControlled
