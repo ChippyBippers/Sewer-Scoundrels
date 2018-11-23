@@ -6,12 +6,12 @@ switch(state){
 			if script_execute(actionScript){
 				actionScript = noone
 				state = gridObject.idle
-				gridScheduler_poke()
+				gridScheduler_poke(noone)
 			}
 		} else {
 			actionScript = noone
 			state = gridObject.idle
-			gridScheduler_poke()
+			gridScheduler_poke(noone)
 			show_debug_message(string(id)+" had no action script. Their turn was aborted.")	
 		}
 		break;

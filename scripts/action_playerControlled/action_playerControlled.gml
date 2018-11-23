@@ -20,6 +20,11 @@ if comittedAction != noone {
 	else
 		script_execute(comittedAction)
 	
+	//debug_spinOthers();//testing worldActionQueue
+	
 	//update gridScheduler with what the player's actually doing
-	gridScheduler_playerPoke(comittedAction)	
+	with gridScheduler{
+		currentActive++
+		gridScheduler_poke(comittedAction)	
+	}
 }
