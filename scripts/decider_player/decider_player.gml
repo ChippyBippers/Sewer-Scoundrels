@@ -1,1 +1,1 @@
-if !argument0 then actionScript = action_playerControlled
+return [actionSetup_playerControlled,noone]

@@ -1,0 +1,2 @@
+actionScript = action_playerControlled
+return true

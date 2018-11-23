@@ -1,20 +1,25 @@
 var vectX = keyboard_check(vk_right)-keyboard_check(vk_left),
 	vectY = keyboard_check(vk_down)-keyboard_check(vk_up),
-	comitted = false;
+	comittedAction = noone,
+	comittedArgs = noone;
 
 if (vectX!=0 || vectY!=0){
 	var gxx = gx+vectX, gyy = gy+vectY;
 	
 	if !grid_meeting(gxx,gyy,gridObject_base){
-		actionSetup_move([gxx,gyy])
-		comitted = true
+		comittedAction = actionSetup_move
+		comittedArgs = [gxx,gyy]
 	}
 } else if keyboard_check_pressed(vk_space){
-	actionSetup_spinny()
-	comitted = true
+	comittedAction = actionSetup_spinny
 }
 
-if comitted {
+if comittedAction != noone {
+	if comittedArgs != noone then
+		script_execute(comittedAction,comittedArgs)
+	else
+		script_execute(comittedAction)
+	
 	//update gridScheduler with what the player's actually doing
-	gridScheduler_playerPoke(actionScript)	
+	gridScheduler_playerPoke(comittedAction)	
 }

@@ -5,18 +5,9 @@ var xx = dcos(floor(counter)*90),
 
 //show_debug_message("Roundhouse: trying to go from "+string_cartesian(gx,gy)+" to "+string_cartesian(gxx,gyy))
 
-/*
 if !grid_meeting(gxx,gyy,gridObject_base){
-	if argument0{
-		counter+=0.5
-		actionSetup_move([gxx,gyy])
-	} else {
-		actionScript = action_move	
-	}
+	counter+=0.5
+	return [actionSetup_move,[gxx,gyy]]
 } else {
-	if argument0{
-		actionSetup_move([gx,gy])	
-	} else {
-		actionScript = action_move
-	}
+	return [actionSetup_move,[gx,gy]]
 }
