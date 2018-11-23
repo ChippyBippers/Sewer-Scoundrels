@@ -6,7 +6,7 @@ if (vectX!=0 || vectY!=0){
 	var gxx = gx+vectX, gyy = gy+vectY;
 	
 	if !grid_meeting(gxx,gyy,gridObject_base){
-		actionSetup_move(gxx,gyy)
+		actionSetup_move([gxx,gyy])
 		comitted = true
 	}
 } else if keyboard_check_pressed(vk_space){

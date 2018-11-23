@@ -10,4 +10,4 @@ currentDone = 0
 
 previousAction = noone
 
-gridScheduler_update()
+gridScheduler_update(noone)

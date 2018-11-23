@@ -6,6 +6,6 @@ with gridScheduler{
 		currentActive = 0
 		currentDone = 0
 	
-		gridScheduler_update()
+		gridScheduler_update(noone)
 	}
 }

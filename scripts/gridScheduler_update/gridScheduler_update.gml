@@ -4,8 +4,11 @@ with gridScheduler {
 	
 	show_debug_message("Scheduling entity #"+string(listIter))
 	
-	var chainableAction = action_move,
-		theAction = noone;
+	var chainableAction = actionSetup_move,
+		actionChunk = noone,
+		actionSetup = noone,
+		actionArgs = noone,
+		previousAction = argument0;
 	
 	with nextEntity {
 		if state != gridObject.idle {
@@ -13,19 +16,28 @@ with gridScheduler {
 			//we've looped all the way around, everybody has something to do at the same time somehow
 			return
 		} 
-		if script_exists(deciderScript) then script_execute(deciderScript,false)
-		theAction = actionScript
+		if script_exists(deciderScript)
+		{
+			//determine what the object wants to do
+			var chunk = script_execute(deciderScript);
+			actionSetup = chunk[0];
+			actionArgs = chunk[1];
+		}
 	}
 	
-	show_debug_message("Entity wants to perform: "+script_get_name(theAction))
+	show_debug_message("Entity wants to perform: "+script_get_name(actionSetup))
 	
-	var chainable = (theAction = chainableAction),
+	var chainable = (actionSetup = chainableAction),
 		pChainable = (previousAction = chainableAction) || (chainable && previousAction = noone);
 	
 	if (chainable && pChainable) || (!chainable && !pChainable){
 		with nextEntity{
 			state = gridObject.acting
-			script_execute(deciderScript,true)
+			
+			if actionArgs = noone then
+				script_execute(actionSetup);//execute with no args
+			else
+				script_execute(actionSetup,actionArgs);//execute with args
 		}
 		currentActive++
 		
@@ -35,8 +47,7 @@ with gridScheduler {
 		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")
 		
 		if chainable then {
-			previousAction = theAction
-			gridScheduler_update() //try to continue the chain!
+			gridScheduler_update(actionSetup) //try to continue the chain!
 		}
 	} else {
 		show_debug_message("Entity has to wait their turn...")

@@ -3,13 +3,10 @@ var xx = dcos(counter*90),
 	gxx = gx+xx,
 	gyy = gy+yy;
 
-if argument0 {
-	if !grid_meeting(gxx,gyy,gridObject_base){
-		actionSetup_move(gxx,gyy)
-		counter++
-	} else {
-		actionSetup_move(gx,gy)
-	}
+
+if !grid_meeting(gxx,gyy,gridObject_base){
+	counter++
+	return [actionSetup_move,[gxx,gyy]]
 } else {
-	actionScript = action_move
+	return [actionSetup_move,[gx,gy]]
 }
