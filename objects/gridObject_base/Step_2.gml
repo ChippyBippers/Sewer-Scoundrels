@@ -2,17 +2,11 @@
 // You can write your code in this editor
 switch(state){
 	case gridObject.acting:
-		if script_exists(actionScript){
-			if script_execute(actionScript){
-				actionScript = noone
-				state = gridObject.idle
-				gridScheduler_poke(noone)
-			}
-		} else {
+		if !script_exists(actionScript) or script_execute(actionScript){
+			//actionScript either does not exist or it has completed its operation
 			actionScript = noone
 			state = gridObject.idle
 			gridScheduler_poke(noone)
-			show_debug_message(string(id)+" had no action script. Their turn was aborted.")	
 		}
-		break;
+		//else: actionScript exists, has been executed, and is not finished
 }

@@ -1,0 +1,1 @@
+return (darctan2(-argument1,argument0)+360) mod 360

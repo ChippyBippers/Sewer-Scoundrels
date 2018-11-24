@@ -1,8 +1,8 @@
 {
-    "id": "ae44499c-5571-4fe6-8a5b-6f41195adfee",
+    "id": "a80031e1-2c62-46e0-a0dc-8de1361c3d91",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "gridScheduler_update",
+    "name": "grid_renderWireTile",
     "IsCompatibility": false,
     "IsDnD": false
 }

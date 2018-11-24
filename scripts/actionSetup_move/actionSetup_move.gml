@@ -6,5 +6,9 @@ pgy = gy
 gx = chunk[0]
 gy = chunk[1]
 
+xDir = sign(gx-pgx)
+yDir = sign(gy-pgy)
+facingAngle = angleFromDir(xDir,yDir)
+
 moveIter = 0
 actionScript = action_move

@@ -1,8 +1,8 @@
 {
-    "id": "dd9816ff-6d55-43ef-9ca7-224dfa23a479",
+    "id": "cac7729e-6fe2-44c9-bd0b-1859f2d5dfca",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "action_spinOthers",
+    "name": "angleFromDir",
     "IsCompatibility": false,
     "IsDnD": false
 }
