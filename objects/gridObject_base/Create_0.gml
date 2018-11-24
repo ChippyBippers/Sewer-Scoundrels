@@ -16,9 +16,6 @@ moveIter = 0
 
 counter = 0
 
-intent = noone //script you wanna call on your turn
-intent_args = noone //arguments for intent
-
 xDir = 1
 yDir = 0
 facingAngle = 0

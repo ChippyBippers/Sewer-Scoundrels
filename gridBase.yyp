@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "62efb0db-d37e-4b98-9d05-1f43805b8f91",
+            "Value": {
+                "id": "5300c1fd-8a97-45c3-831e-3a5a80746439",
+                "resourcePath": "scripts\\gridObject_getAtPosition\\gridObject_getAtPosition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "63846466-c993-49f9-bc97-d015afc98301",
             "Value": {
                 "id": "54dd6d44-87df-4dd7-b79c-d70948fc2ed7",
@@ -191,6 +199,14 @@
             }
         },
         {
+            "Key": "7bb5658d-354b-4feb-9988-7d50903d8870",
+            "Value": {
+                "id": "4281a923-725d-4a36-9381-d905a2b5d3e6",
+                "resourcePath": "views\\7bb5658d-354b-4feb-9988-7d50903d8870.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7c3eb408-97cb-40d1-b288-85959f6ab882",
             "Value": {
                 "id": "b9018080-f04a-4116-92ca-6add1798f6d3",
@@ -219,6 +235,14 @@
             "Value": {
                 "id": "ba7845b4-a16c-4756-9608-011216d7dfd7",
                 "resourcePath": "scripts\\action_spinny\\action_spinny.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8197e2b5-6c27-4bdc-99da-9693d19898ab",
+            "Value": {
+                "id": "096e2900-fc1b-4fed-8956-ac3462de7432",
+                "resourcePath": "scripts\\action_basicAttack\\action_basicAttack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -347,6 +371,14 @@
             "Value": {
                 "id": "f0c47a50-1ff9-452a-ae01-42d014f9ba6e",
                 "resourcePath": "scripts\\decider_spinny\\decider_spinny.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b3fe147f-19b2-4fe4-b932-52540c1db906",
+            "Value": {
+                "id": "8b16711f-156d-4f30-b984-52ca68536f96",
+                "resourcePath": "scripts\\actionSetup_basicAttack\\actionSetup_basicAttack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -524,6 +556,8 @@
         "08159576-b16e-4be7-9c9b-602630e94ac6",
         "9f75227b-dc58-4868-9f27-146ed5a0766c",
         "2839e33f-13f4-4573-9f76-ee17d39a5d46",
+        "b3fe147f-19b2-4fe4-b932-52540c1db906",
+        "8197e2b5-6c27-4bdc-99da-9693d19898ab",
         "658d3b7d-8ce1-4823-a7eb-5cef103aea80",
         "d90a774f-941d-430e-9750-b25e07bb0f01",
         "08ac265e-7c64-4045-b105-48cf7c3b3052",
@@ -534,6 +568,7 @@
         "e22b8ecb-8da9-4396-ab46-039a509f84fe",
         "4ae20aba-a999-4d33-aaec-183b498a0f1b",
         "eca30acc-4628-4fa2-9833-5258a259e1e9",
+        "62efb0db-d37e-4b98-9d05-1f43805b8f91",
         "a80031e1-2c62-46e0-a0dc-8de1361c3d91",
         "3cd92477-8dd0-47bb-a85a-0ebd4ff19435",
         "cac7729e-6fe2-44c9-bd0b-1859f2d5dfca"

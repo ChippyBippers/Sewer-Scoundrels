@@ -36,7 +36,7 @@ if (vectX!=0 || vectY!=0){
 		comittedArgs = [gxx,gyy]
 	}
 } else if keyboard_check_pressed(vk_space){
-	comittedAction = actionSetup_spinny
+	comittedAction = actionSetup_basicAttack
 }
 
 if comittedAction != noone {

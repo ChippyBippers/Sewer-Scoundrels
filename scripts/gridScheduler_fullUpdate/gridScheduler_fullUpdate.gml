@@ -30,8 +30,8 @@ with gridScheduler {
 	var chainable = (actionSetup = chainableAction),
 		pChainable = (previousAction = chainableAction) || (chainable && previousAction = noone);
 	
-	if (chainable && pChainable) || (!chainable && !pChainable){
-		with nextEntity{
+	if actionSetup = noone || (chainable && pChainable) || (!chainable && !pChainable) {
+		if script_exists(actionSetup) then with nextEntity{
 			state = gridObject.acting
 			
 			if actionArgs = noone then
@@ -39,6 +39,7 @@ with gridScheduler {
 			else
 				script_execute(actionSetup,actionArgs);//execute with args
 		}
+		
 		currentActive++
 		
 		listIter++;

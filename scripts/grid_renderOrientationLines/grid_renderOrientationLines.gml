@@ -13,7 +13,7 @@ for(var j=0;j<8;j++){
 		dy = sign(-dsin(currentAngle)),
 		cc = (facing == currentAngle)?1: 0;
 	
-	show_debug_message(string(facing)+"_"+string(currentAngle))
+	//show_debug_message(string(facing)+"_"+string(currentAngle))
 	
 	for(var i=1;i<=radius;i++){
 		var xx = originX + dx*i,
