@@ -1,5 +1,1 @@
-if !argument0{
-	actionScript = action_spinny	
-} else {
-	actionSetup_spinny()	
-}
+if !argument0 return [actionSetup_spinny,noone]

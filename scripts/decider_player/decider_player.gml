@@ -1,1 +1,1 @@
-return [actionSetup_playerControlled,noone]
+if !argument0 return [actionSetup_playerControlled,noone]

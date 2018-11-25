@@ -19,7 +19,7 @@ with gridScheduler {
 		if script_exists(deciderScript)
 		{
 			//determine what the object wants to do
-			var chunk = script_execute(deciderScript);
+			var chunk = script_execute(deciderScript,false);
 			actionSetup = chunk[0];
 			actionArgs = chunk[1];
 		}
@@ -32,6 +32,9 @@ with gridScheduler {
 	
 	if actionSetup = noone || (chainable && pChainable) || (!chainable && !pChainable) {
 		if script_exists(actionSetup) then with nextEntity{
+			//give them the o-k
+			script_execute(deciderScript,true);
+			
 			state = gridObject.acting
 			
 			if actionArgs = noone then
