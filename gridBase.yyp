@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "10b71114-819e-47cd-978d-7e931a4f6ba4",
+            "Value": {
+                "id": "f09d8317-e957-4365-804a-67fbe230685c",
+                "resourcePath": "scripts\\gridObject_applyDamage\\gridObject_applyDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "180cb936-5420-4571-98a1-a648f060f55a",
             "Value": {
                 "id": "b0ba0a8e-a06e-4952-9e4b-643e91bafab1",
@@ -602,6 +610,7 @@
         "4ae20aba-a999-4d33-aaec-183b498a0f1b",
         "eca30acc-4628-4fa2-9833-5258a259e1e9",
         "62efb0db-d37e-4b98-9d05-1f43805b8f91",
+        "10b71114-819e-47cd-978d-7e931a4f6ba4",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
         "a80031e1-2c62-46e0-a0dc-8de1361c3d91",
         "3cd92477-8dd0-47bb-a85a-0ebd4ff19435",

@@ -8,8 +8,10 @@ if attackIter>=attackTime {
 	y = gy*16
 	return true
 } else if attackIter>=mid{
-	if attackIter = mid then 
-		if instance_exists(attackTarget) then gridScheduler_enqueue(attackTarget,[actionSetup_hurt,noone])
+	if attackIter = mid then with attackTarget {
+		gridScheduler_enqueue(id,[actionSetup_hurt,noone])
+		gridObject_applyDamage(other.id,id)
+	}
 	
 	x = lerp(attack_tx,gx,(attackIter-mid)/mid)*16
 	y = lerp(attack_ty,gy,(attackIter-mid)/mid)*16

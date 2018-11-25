@@ -20,3 +20,8 @@ xDir = 1
 yDir = 0
 facingAngle = 0
 renderAngle = 0
+
+
+//combat stats
+maxHP = 10
+hp = maxHP
