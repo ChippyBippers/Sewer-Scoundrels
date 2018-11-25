@@ -46,7 +46,10 @@ with gridScheduler {
 		currentActive++
 		
 		listIter++;
-		if listIter>=ds_list_size(entities) then listIter = 0
+		if listIter>=ds_list_size(entities) {
+			listIter = 0
+			turn++
+		}
 		
 		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")
 		

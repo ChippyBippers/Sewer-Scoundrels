@@ -37,6 +37,7 @@ if (vectX!=0 || vectY!=0){
 	}
 } else if keyboard_check_pressed(vk_space){
 	comittedAction = actionSetup_basicAttack
+	comittedArgs = [xDir,yDir]
 }
 
 if comittedAction != noone {

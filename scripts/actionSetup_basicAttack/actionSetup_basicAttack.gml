@@ -1,3 +1,8 @@
+var chunk = argument0;
+
+xDir = chunk[0]
+yDir = chunk[1];
+
 attack_tx = gx+xDir
 attack_ty = gy+yDir
 

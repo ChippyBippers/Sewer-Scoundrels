@@ -6,6 +6,8 @@ with gridObject_base{
 }
 
 listIter = 0
+turn = 0
+
 currentActive = 0
 currentDone = 0
 

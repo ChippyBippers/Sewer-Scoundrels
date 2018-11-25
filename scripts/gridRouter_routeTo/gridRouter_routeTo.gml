@@ -11,4 +11,5 @@ with gridRouter{
 	return mp_grid_path(gridMap,path,fx,fy,tx,ty,true)
 }
 
+show_debug_message("Warning: There is no gridRouter object for pathfinding")
 return false
