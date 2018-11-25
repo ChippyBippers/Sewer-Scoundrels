@@ -50,6 +50,8 @@ if comittedAction != noone {
 	
 	//update gridScheduler with what the player's actually doing
 	with gridScheduler{
-		gridScheduler_poke(comittedAction)	
+		//finish one action, start another
+		gridScheduler_poke(comittedAction)
+		currentActive++
 	}
 }

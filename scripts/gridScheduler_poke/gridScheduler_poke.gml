@@ -1,6 +1,6 @@
 with gridScheduler{
 	currentDone++
-	show_debug_message("Poke! "+string(currentDone)+" out of "+string(currentActive)+" active entities are done.")
+	show_debug_message("Poke! "+string(other.id)+" is done acting. "+string(currentDone)+" out of "+string(currentActive)+" active entities are done.")
 
 	if currentDone>=currentActive{
 		currentActive = 0

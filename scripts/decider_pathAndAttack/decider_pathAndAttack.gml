@@ -14,9 +14,7 @@ if argument0 {
 	}
 	
 	//get a route to the player
-	show_debug_message(gridRouter_routeTo(id,player,path))
-	
-	show_debug_message(path_get_number(path))
+	gridRouter_routeTo(id,player,path)
 	
 	if path_get_number(path)>2{
 		//there's at least one tile of distance between you and the target
