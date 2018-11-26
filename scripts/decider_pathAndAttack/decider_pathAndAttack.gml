@@ -14,7 +14,7 @@ if argument0 {
 	}
 	
 	//get a route to the player
-	gridRouter_routeTo(id,player,path)
+	if instance_exists(player) then gridRouter_routeTo(id,player,path)
 	
 	if path_get_number(path)>2{
 		//there's at least one tile of distance between you and the target
