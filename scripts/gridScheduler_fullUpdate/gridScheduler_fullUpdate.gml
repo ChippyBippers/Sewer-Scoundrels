@@ -24,12 +24,15 @@ with gridScheduler {
 		}
 	}
 	
-	show_debug_message("Entity wants to perform: "+script_get_name(actionSetup))
+	show_debug_message("Entity wants to perform: "+script_get_name(actionSetup)+ " (previous action is "+script_get_name(previousAction)+")")
 	
 	var chainable = (actionSetup = chainableAction),
-		pChainable = (previousAction = chainableAction) || (chainable && previousAction = noone);
+		pNone = (previousAction = noone),
+		pChainable = pNone? noone: (previousAction = chainableAction);
 	
-	if actionSetup = noone || (chainable && pChainable) || (!chainable && !pChainable) {
+	if (chainable && (!pNone || pChainable)) ||
+	(!chainable && pNone)
+	{
 		if script_exists(actionSetup) then with nextEntity{
 			//give them the o-k
 			script_execute(deciderScript,true);
@@ -53,6 +56,7 @@ with gridScheduler {
 		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")
 		
 		if chainable then {
+			show_debug_message("Scheduler is attemtping to chain to an additional entity")
 			gridScheduler_fullUpdate(actionSetup) //try to continue the chain!
 		}
 	} else {

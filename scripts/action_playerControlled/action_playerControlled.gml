@@ -46,7 +46,7 @@ if comittedAction != noone {
 	else
 		script_execute(comittedAction)
 	
-	//debug_spinOthers();//testing worldActionQueue
+	show_debug_message("playerControl is executing "+script_get_name(comittedAction))
 	
 	//update gridScheduler with what the player's actually doing
 	with gridScheduler{
