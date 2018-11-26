@@ -2,7 +2,7 @@
 {
     "name": "room0",
     "id": "9de84b5e-0a18-4f5a-99fe-ab9e6066cc91",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -12,8 +12,8 @@
         "43b94ba6-31b7-4c8a-bafe-6af0a38cfa6c",
         "00d994c6-9013-4c9f-bd3e-bb6c7ac41307",
         "57bd0eb3-f8d9-49fa-a27b-c9ba4da00b48",
-        "c5f77c18-cacb-4b3f-9985-73e895348b18",
-        "6e2476db-9dbb-498c-848d-bc68aee2c4fa"
+        "6e2476db-9dbb-498c-848d-bc68aee2c4fa",
+        "c5f77c18-cacb-4b3f-9985-73e895348b18"
     ],
     "IsDnD": false,
     "layers": [
