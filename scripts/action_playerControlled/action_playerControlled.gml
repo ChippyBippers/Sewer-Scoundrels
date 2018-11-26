@@ -35,7 +35,7 @@ if (vectX!=0 || vectY!=0){
 		comittedAction = actionSetup_move
 		comittedArgs = [gxx,gyy]
 	}
-} else if keyboard_check_pressed(vk_space){
+} else if keyboard_check_pressed(vk_space) and !playerControl_holdAndOrientate{
 	comittedAction = actionSetup_basicAttack
 	comittedArgs = [xDir,yDir]
 }

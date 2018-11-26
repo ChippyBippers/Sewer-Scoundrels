@@ -1,8 +1,7 @@
 with gridScheduler {
-	var nextEntity = entities[| listIter],
-		goNow = false;
+	var nextEntity = entities[| listIter];
 	
-	show_debug_message("Scheduling entity #"+string(listIter))
+	show_debug_message("Scheduling entity #"+string(listIter)+" ("+string(nextEntity)+")")
 	
 	var chainableAction = actionSetup_move,
 		actionChunk = noone,

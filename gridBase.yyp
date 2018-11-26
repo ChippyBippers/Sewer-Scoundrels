@@ -645,6 +645,14 @@
                 "resourcePath": "views\\fba30f35-9246-47da-9b4e-d19d20606880.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fe296f7d-ff14-4e6d-a5db-08535910fae7",
+            "Value": {
+                "id": "bec500be-477d-4108-8ab2-573055b97ea8",
+                "resourcePath": "scripts\\gridScheduler_remove\\gridScheduler_remove.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -672,6 +680,7 @@
         "7c3eb408-97cb-40d1-b288-85959f6ab882",
         "e22b8ecb-8da9-4396-ab46-039a509f84fe",
         "4ae20aba-a999-4d33-aaec-183b498a0f1b",
+        "fe296f7d-ff14-4e6d-a5db-08535910fae7",
         "eca30acc-4628-4fa2-9833-5258a259e1e9",
         "62efb0db-d37e-4b98-9d05-1f43805b8f91",
         "10b71114-819e-47cd-978d-7e931a4f6ba4",
