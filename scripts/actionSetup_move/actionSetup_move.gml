@@ -15,8 +15,15 @@ actionScript = action_move
 
 with gridRouter{
 	if (other.pgx>=0 && other.pgx<width) &&
-	(other.pgy>=0 && other.pgy<width) {
-		mp_grid_clear_cell(gridMap,other.pgx,other.pgy)	
+	(other.pgy>=0 && other.pgy<width){
+		var good = true;
+		var xx = other.pgx, yy = other.pgy;
+		
+		with gridLevel{
+			if grid[# xx,yy] good = false	
+		}
+		
+		if good mp_grid_clear_cell(gridMap,other.pgx,other.pgy)	
 	}
 	
 	if (other.gx>=0 && other.gx<width) &&
