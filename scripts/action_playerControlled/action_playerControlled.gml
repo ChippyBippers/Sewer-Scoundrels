@@ -31,7 +31,7 @@ if (vectX!=0 || vectY!=0){
 		angle = other.facingAngle
 	}
 	
-	if !playerControl_holdAndOrientate && !grid_meeting(gxx,gyy,gridObject_base){
+	if !playerControl_holdAndOrientate && gridObject_walkCheck(vectX,vectY){
 		comittedAction = actionSetup_move
 		comittedArgs = [gxx,gyy]
 	}
