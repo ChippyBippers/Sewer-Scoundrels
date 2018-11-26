@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "2e732da8-b399-47e8-b1c7-4ba71782cec3",
+            "Value": {
+                "id": "31a73822-50aa-469f-a1f1-7582cca869c7",
+                "resourcePath": "scripts\\gridObject_walkCheck\\gridObject_walkCheck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3cd92477-8dd0-47bb-a85a-0ebd4ff19435",
             "Value": {
                 "id": "807d5e34-4cde-4912-985f-32d82134b610",
@@ -724,6 +732,7 @@
         "eca30acc-4628-4fa2-9833-5258a259e1e9",
         "62efb0db-d37e-4b98-9d05-1f43805b8f91",
         "10b71114-819e-47cd-978d-7e931a4f6ba4",
+        "2e732da8-b399-47e8-b1c7-4ba71782cec3",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
         "a80031e1-2c62-46e0-a0dc-8de1361c3d91",
         "3cd92477-8dd0-47bb-a85a-0ebd4ff19435",

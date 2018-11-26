@@ -1,7 +1,9 @@
-//updates based on target
-//(call within self)
+//updates provided camera (object)
+with argument0{
+	if instance_exists(target){
+		var px = target.x - camera_get_view_width(camera)/2,
+			py = target.y - camera_get_view_height(camera)/2;
 
-var px = target.x - camera_get_view_width(camera)/2,
-	py = target.y - camera_get_view_height(camera)/2;
-
-camera_set_view_pos(camera,px,py);
+		camera_set_view_pos(camera,px,py);
+	}
+}
