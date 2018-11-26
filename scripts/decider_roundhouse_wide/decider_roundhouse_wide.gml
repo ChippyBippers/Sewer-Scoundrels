@@ -1,3 +1,5 @@
+//this one's old and it sucks
+
 if argument0 {
 	counter+=0.5
 	return

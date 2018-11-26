@@ -1,9 +1,9 @@
-var xx = dcos(counter*90),
-	yy = dsin(counter*90),
-	gxx = gx+xx,
-	gyy = gy+yy;
+var dx = dcos(counter*90),
+	dy = dsin(counter*90),
+	gxx = gx+dx,
+	gyy = gy+dy;
 
-if !grid_meeting(gxx,gyy,gridObject_base){
+if gridObject_walkCheck(dx,dy){
 	if argument0 counter++
 	return [actionSetup_move,[gxx,gyy]]
 } else {
