@@ -1,3 +1,5 @@
+hp_pos = [16, 16]
+
 /// @description Insert description here
 // You can write your code in this edito
 width = make_odd(width)
