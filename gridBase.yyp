@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "48d8854a-89d1-4db5-aa69-2cd463921414",
+            "Value": {
+                "id": "204d7170-da43-4b08-843c-ab981cdf2792",
+                "resourcePath": "objects\\baseCamera\\baseCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ae20aba-a999-4d33-aaec-183b498a0f1b",
             "Value": {
                 "id": "daed1769-61ed-425b-966e-76d715ca5417",
@@ -439,6 +447,14 @@
             }
         },
         {
+            "Key": "b16c1bd3-4432-4427-afb5-2d03b55ce586",
+            "Value": {
+                "id": "19e12861-1eda-42f9-a321-5b6a058ed1b8",
+                "resourcePath": "scripts\\camera_retarget\\camera_retarget.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b224e25d-1ddd-4146-a603-61829b5a12ce",
             "Value": {
                 "id": "f0c47a50-1ff9-452a-ae01-42d014f9ba6e",
@@ -499,6 +515,14 @@
             "Value": {
                 "id": "dad06dce-c6e9-4e05-a16b-9985170e4d8f",
                 "resourcePath": "scripts\\angleFromDir\\angleFromDir.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cb2fcc0b-3320-4646-b36c-547bce981bac",
+            "Value": {
+                "id": "845a9928-f28f-44ff-821e-b5822313b18e",
+                "resourcePath": "scripts\\camera_updatePos\\camera_updatePos.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -690,7 +714,9 @@
         "cac7729e-6fe2-44c9-bd0b-1859f2d5dfca",
         "a62cf6a8-d057-4f02-90e0-402c3a21f978",
         "f89f0d0f-b901-430b-9ff8-e32a8e1f681d",
-        "2041b7ad-b7d4-44a0-bfa7-3535a8f73ebf"
+        "2041b7ad-b7d4-44a0-bfa7-3535a8f73ebf",
+        "b16c1bd3-4432-4427-afb5-2d03b55ce586",
+        "cb2fcc0b-3320-4646-b36c-547bce981bac"
     ],
     "tutorial": ""
 }

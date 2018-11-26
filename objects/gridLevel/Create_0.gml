@@ -20,7 +20,7 @@ for (yy = 0; yy < height; yy += 1) {
 
 // Add rooms
 for (i = 0; i < room_attempts; i += 1) {
-	show_debug_message(i)
+	//show_debug_message(i)
 	// Create new room coordinates
 	r_width = make_odd(irandom_range(room_min_size, room_max_size))
 	r_height = make_odd(irandom_range(room_min_size, room_max_size))
@@ -67,7 +67,7 @@ for (r = 1; r < ds_list_size(rooms); r++) {
 	
 	point = [last_room.r_pos[0] + (x_dist < 0 ? last_room.r_width : -1), last_room.r_pos[1] + irandom_range(0, last_room.r_height - 1)]
 	goal_point = [goal_room.r_pos[0] + irandom_range(0, goal_room.r_width - 1), goal_room.r_pos[1] + (y_dist > 0 ? goal_room.r_height : -1)]
-	show_debug_message(string(goal_point[0]) + "," + string(goal_point[1]))
+	//show_debug_message(string(goal_point[0]) + "," + string(goal_point[1]))
 	
 	// Remove walls while creating hallways
 	ds_grid_set(grid, point[0], point[1], false)
