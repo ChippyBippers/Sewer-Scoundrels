@@ -6,7 +6,7 @@ if argument0 {
 	//find a player
 	var player = noone;
 	
-	with gridObject_base{
+	with gridObject_character{
 		if id != other.id and deciderScript = decider_player {
 			player = id
 			break;

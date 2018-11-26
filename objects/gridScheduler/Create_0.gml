@@ -1,7 +1,7 @@
 entities = ds_list_create()
 worldActionQueue = ds_queue_create()
 
-with gridObject_base{
+with gridObject_character{
 	ds_list_add(other.entities,id);	
 }
 

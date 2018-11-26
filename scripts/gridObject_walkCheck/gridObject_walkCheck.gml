@@ -22,10 +22,10 @@ with gridLevel {
 //instance checking
 if 
 	//basic check
-	grid_meeting(gxx,gyy,gridObject_base) or
+	grid_meeting(gxx,gyy,gridObject_character) or
 	//diagonal movement check (AND; must be fully obstructed)
 	((dx !=0 and dy !=0) and
-	(grid_meeting(gx,gyy,gridObject_base) and grid_meeting(gxx,gy,gridObject_base)))
+	(grid_meeting(gx,gyy,gridObject_character) and grid_meeting(gxx,gy,gridObject_character)))
 {
 	return false
 }

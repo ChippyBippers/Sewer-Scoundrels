@@ -1,4 +1,4 @@
-//from one gridObject_base to another gridObject_base
+//from one gridObject_character to another gridObject_character
 //also provide a path data structure
 with gridRouter{
 	var fx = argument0.gx,

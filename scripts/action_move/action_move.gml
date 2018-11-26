@@ -1,6 +1,7 @@
 moveIter++
 
 if moveIter>moveTime {
+	//put the shit HERE
 	return true
 } else {
 	x = lerp(pgx*16,gx*16,moveIter/moveTime)

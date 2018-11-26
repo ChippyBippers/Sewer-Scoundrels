@@ -14,7 +14,7 @@ with gridLevel {
 	}
 }
 
-with gridObject_base {
+with gridObject_character {
 	if (gx>=0 && gx<other.width) &&
 	(gy>=0 && gy<other.width) then
 	mp_grid_add_cell(gm,gx,gy)	
