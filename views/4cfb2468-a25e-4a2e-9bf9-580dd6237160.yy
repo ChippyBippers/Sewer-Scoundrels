@@ -4,12 +4,10 @@
     "mvc": "1.1",
     "name": "4cfb2468-a25e-4a2e-9bf9-580dd6237160",
     "children": [
-        "e9289476-ba26-40e4-8517-733b80dc6f43",
         "a999af5a-68b2-4aaa-aa38-0e2a01bcd716",
-        "c9cc8266-8741-4bfe-82c7-625e54ae0301",
-        "7cc45838-f0e3-4fcd-8dcb-bee41257d63a",
-        "2839e33f-13f4-4573-9f76-ee17d39a5d46",
-        "7bb5658d-354b-4feb-9988-7d50903d8870"
+        "7bb5658d-354b-4feb-9988-7d50903d8870",
+        "6f55b33b-ea89-4b44-baf1-9146ce55a5af",
+        "bdfaec40-95c3-459b-a054-0f3196861407"
     ],
     "filterType": "GMScript",
     "folderName": "actions",

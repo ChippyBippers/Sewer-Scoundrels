@@ -1,18 +1,18 @@
 {
-    "id": "65386ecd-61f6-48ac-9593-b75b5d9c2c9d",
+    "id": "d9c84453-011a-458b-9ea8-89355995825b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "gridObject_ground",
+    "name": "gridObject_tile",
     "eventList": [
         {
-            "id": "516bc2fb-895f-4437-a884-061bcb3429f7",
+            "id": "b3cdb954-be3a-406c-a2b2-4a3b3c3b6d95",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "65386ecd-61f6-48ac-9593-b75b5d9c2c9d"
+            "m_owner": "d9c84453-011a-458b-9ea8-89355995825b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "323f3150-21a5-45b6-a271-930f8c9b6338",
+            "id": "d38ad129-0ac7-4463-ba56-64197c9a5e21",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -41,13 +41,13 @@
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "stepOnScript",
-            "varType": 0
+            "resourceFilter": 16,
+            "value": "tileActive_dummy",
+            "varName": "activateScript",
+            "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "9316088c-ce21-4a66-9e1e-7a66cfe351ad",
     "visible": true
 }
