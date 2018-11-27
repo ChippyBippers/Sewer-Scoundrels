@@ -26,11 +26,13 @@ with gridScheduler {
 	
 	show_debug_message("Entity wants to perform: "+script_get_name(actionSetup)+ " (previous action is "+script_get_name(previousAction)+")")
 	
-	var chainable = (actionSetup = chainableAction),
-		pNone = (previousAction = noone),
-		pChainable = pNone? noone: (previousAction = chainableAction);
+	var chainable = (actionSetup == chainableAction),
+		pNone = (previousAction == noone),
+		pChainable = pNone? false: (previousAction == chainableAction);
 	
-	if (chainable && (!pNone || pChainable)) ||
+	show_debug_message(string(!pNone || pChainable))
+	
+	if (chainable && (pNone || pChainable)) ||
 	(!chainable && pNone)
 	{
 		if script_exists(actionSetup) then with nextEntity{
