@@ -38,6 +38,7 @@ with gridScheduler {
 			script_execute(deciderScript,true);
 			
 			state = gridObject.acting
+			myTurn = true //enables end-of-turn checks
 			
 			if actionArgs = noone then
 				script_execute(actionSetup);//execute with no args

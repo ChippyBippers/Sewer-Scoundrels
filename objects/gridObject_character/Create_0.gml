@@ -12,6 +12,7 @@ facingAngle = 0
 renderAngle = 0
 
 //misc misc
+myTurn = false
 cameraFollow = false
 
 //misc variables for actions & deciders
@@ -28,3 +29,5 @@ maxHP = 10
 hp = maxHP
 
 inventory = ds_list_create()
+itemMap_scripts = ds_map_create()
+itemMap_sprites = ds_map_create()

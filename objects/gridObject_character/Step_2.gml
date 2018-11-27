@@ -8,6 +8,9 @@ switch(state){
 				//actionScript either does not exist or it has completed its operation
 				actionScript = noone
 				state = gridObject.idle
+				
+				if myTurn then gridCharacter_endOfTurn()
+				
 				gridScheduler_poke(noone)
 			}
 			//else: actionScript exists, has been executed, and is not finished
