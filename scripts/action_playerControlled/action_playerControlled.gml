@@ -35,10 +35,24 @@ if (vectX!=0 || vectY!=0){
 		comittedAction = actionSetup_move
 		comittedArgs = [gxx,gyy]
 	}
-} else if keyboard_check_pressed(vk_space) and !playerControl_holdAndOrientate{
-	comittedAction = actionSetup_basicAttack
-	comittedArgs = [xDir,yDir]
+} else if !playerControl_holdAndOrientate{
+	if keyboard_check_pressed(vk_space){
+		//basicAttack
+		comittedAction = actionSetup_basicAttack
+		comittedArgs = [xDir,yDir]	
+	} else if keyboard_check_pressed(ord("Z")) {
+		//use an item
+		if !ds_list_empty(inventory) {
+			//todo: actual item selection instead of just using the first item
+			var item = inventory[| 0];
+			ds_list_delete(inventory,0)
+			
+			comittedAction = itemMap_scripts[? item]
+		}
+	}
 }
+
+
 
 if comittedAction != noone {
 	if comittedArgs != noone then
