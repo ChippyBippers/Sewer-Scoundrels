@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "86020336-ed6b-4d51-b7cf-c352c7e067a2",
+            "Value": {
+                "id": "c5723be5-b167-471e-838e-6f020a82ccd0",
+                "resourcePath": "scripts\\execute_actionSetup\\execute_actionSetup.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "88a369e1-1d1a-4f9c-89d7-f97622244ab2",
             "Value": {
                 "id": "a04b9ca3-7a6d-4c97-ad9e-27f536d41adf",
@@ -1046,6 +1054,7 @@
         "dd9816ff-6d55-43ef-9ca7-224dfa23a479",
         "08159576-b16e-4be7-9c9b-602630e94ac6",
         "9f75227b-dc58-4868-9f27-146ed5a0766c",
+        "86020336-ed6b-4d51-b7cf-c352c7e067a2",
         "658d3b7d-8ce1-4823-a7eb-5cef103aea80",
         "d90a774f-941d-430e-9750-b25e07bb0f01",
         "08ac265e-7c64-4045-b105-48cf7c3b3052",
@@ -1062,9 +1071,6 @@
         "10b71114-819e-47cd-978d-7e931a4f6ba4",
         "2e732da8-b399-47e8-b1c7-4ba71782cec3",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
-        "a80031e1-2c62-46e0-a0dc-8de1361c3d91",
-        "3cd92477-8dd0-47bb-a85a-0ebd4ff19435",
-        "cac7729e-6fe2-44c9-bd0b-1859f2d5dfca",
         "a62cf6a8-d057-4f02-90e0-402c3a21f978",
         "f89f0d0f-b901-430b-9ff8-e32a8e1f681d",
         "2041b7ad-b7d4-44a0-bfa7-3535a8f73ebf",
@@ -1072,6 +1078,9 @@
         "d482e689-7f5b-47bd-bc8c-017d0eb5ac7d",
         "f22260da-0382-49cb-863f-a1c1b84f577d",
         "8da692d3-b6e9-42fe-94b6-61e3587abc57",
+        "a80031e1-2c62-46e0-a0dc-8de1361c3d91",
+        "3cd92477-8dd0-47bb-a85a-0ebd4ff19435",
+        "cac7729e-6fe2-44c9-bd0b-1859f2d5dfca",
         "b16c1bd3-4432-4427-afb5-2d03b55ce586",
         "cb2fcc0b-3320-4646-b36c-547bce981bac",
         "ce474f68-d5d4-4c99-8993-56c5f4832dc0",

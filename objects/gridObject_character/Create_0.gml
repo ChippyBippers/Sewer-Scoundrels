@@ -26,3 +26,5 @@ counter = 0
 //combat stats
 maxHP = 10
 hp = maxHP
+
+inventory = ds_list_create()
