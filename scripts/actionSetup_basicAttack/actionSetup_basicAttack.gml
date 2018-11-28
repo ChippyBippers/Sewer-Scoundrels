@@ -7,7 +7,7 @@ attack_tx = gx+xDir
 attack_ty = gy+yDir
 
 actionScript = action_basicAttack
-attackTarget = gridObject_getAtPosition(attack_tx,attack_ty)
+attackTarget = grid_meeting_getInstance(attack_tx,attack_ty,gridObject_character)
 
 attackIter = 0
 attackTime = moveTime

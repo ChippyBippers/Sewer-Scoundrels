@@ -30,8 +30,6 @@ with gridScheduler {
 		pNone = (previousAction == noone),
 		pChainable = pNone? false: (previousAction == chainableAction);
 	
-	show_debug_message(string(!pNone || pChainable))
-	
 	if (chainable && (pNone || pChainable)) ||
 	(!chainable && pNone)
 	{
@@ -54,6 +52,7 @@ with gridScheduler {
 		if listIter>=ds_list_size(entities) {
 			listIter = 0
 			turn++
+			show_debug_message("/// Turn "+string(turn)+" ///")
 		}
 		
 		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")

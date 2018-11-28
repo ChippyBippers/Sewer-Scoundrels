@@ -42,7 +42,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "itemUseSetup_dummy",
+            "value": "itemUseSetup_sippy",
             "varName": "itemActionScript",
             "varType": 5
         }

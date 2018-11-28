@@ -16,6 +16,9 @@ with gridRouter {
 	instance_destroy(self)
 }
 
+//leak prevention
+if ds_exists(grid,ds_type_grid) then ds_grid_destroy(grid)
+
 grid = ds_grid_create(width, height)
 rooms = generate_level(width, height)
 
@@ -27,7 +30,7 @@ if r_point != undefined {
 	player.y = r_point[1] * 16
 }
 
-add_enemies(rooms, 1)
+add_enemies(rooms, 3)
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)
