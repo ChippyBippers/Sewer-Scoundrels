@@ -17,4 +17,13 @@ if item != noone and ds_list_size(inventory) < inventorySlots {
 
 //todo: apply status effects (poison damage, etc)
 
+//hp regeneration
+var hpRate = 0.05;
+
+hpRate *= !tookDamage
+//todo: poison disables healing (hpRate = 0)
+
+hp = min(hp+maxHP*hpRate, maxHP)
+
+tookDamage = false
 myTurn = false

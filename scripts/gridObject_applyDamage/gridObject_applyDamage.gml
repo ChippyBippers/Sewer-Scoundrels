@@ -11,6 +11,8 @@ with receiver{
 		//todo: death fizzle or something
 		instance_destroy()	
 	}
+	
+	tookDamage = true
 }
 
 show_debug_message(string(sender)+" inflicted "+string(damage)+" onto "+string(receiver))

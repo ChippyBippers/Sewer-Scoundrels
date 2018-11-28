@@ -14,6 +14,7 @@ renderAngle = 0
 //misc misc
 myTurn = false
 cameraFollow = false
+tookDamage = false //determine if hp regen this turn
 
 //misc variables for actions & deciders
 
