@@ -42,8 +42,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 16,
-            "value": "tileActive_dummy",
-            "varName": "activateScript",
+            "value": "tileActive_staircase",
+            "varName": "steppedOnScript",
             "varType": 5
         }
     ],

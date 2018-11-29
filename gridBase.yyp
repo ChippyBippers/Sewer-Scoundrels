@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "114bbfc9-514a-43af-819a-a9634292a7c5",
+            "Value": {
+                "id": "a32c000e-53a4-458a-b2cd-dc40a513092e",
+                "resourcePath": "sprites\\spr_baddy\\spr_baddy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "11f213c0-1a04-46a2-be31-2a10e8ba1d80",
             "Value": {
                 "id": "ced343a5-cbc0-4625-92d8-5a78b8e2f35e",
@@ -855,6 +863,14 @@
             }
         },
         {
+            "Key": "c9be7597-f9cc-492a-ab26-2ba3a6ab9820",
+            "Value": {
+                "id": "5f0140d6-f6a6-47da-9dcb-b159e0a5da3c",
+                "resourcePath": "scripts\\tileActive_staircase\\tileActive_staircase.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c9cc8266-8741-4bfe-82c7-625e54ae0301",
             "Value": {
                 "id": "37da4f90-6ff7-4ff0-88bd-46d3dcd41d50",
@@ -1215,7 +1231,8 @@
         "88a369e1-1d1a-4f9c-89d7-f97622244ab2",
         "c1dd5c8c-f7b9-49bc-ac46-e5b191f25531",
         "e31d5183-be02-42c4-9b10-c6fd68c365cf",
-        "374080c3-cc3f-4662-982f-dd2202555a08"
+        "374080c3-cc3f-4662-982f-dd2202555a08",
+        "c9be7597-f9cc-492a-ab26-2ba3a6ab9820"
     ],
     "tutorial": ""
 }

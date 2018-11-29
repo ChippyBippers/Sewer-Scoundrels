@@ -62,12 +62,15 @@ if r_point != undefined {
 }
 
 // Add "Boss Enemies"
-enemy = gridObject_spawn_character(6,7,instanceLayer,decider_pathAndAttack)		
+var enemy = gridObject_spawn_character(5,7,instanceLayer,decider_pathAndAttack);	
 gridObject_setStats(enemy,5,true,1,0)
-enemy = gridObject_spawn_character(8,7,instanceLayer,decider_pathAndAttack)		
+enemy.sprite_index = spr_baddy
+enemy = gridObject_spawn_character(9,7,instanceLayer,decider_pathAndAttack)		
 gridObject_setStats(enemy,5,true,1,0)
-enemy = gridObject_spawn_character(7,8,instanceLayer,decider_pathAndAttack)		
+enemy.sprite_index = spr_baddy
+enemy = gridObject_spawn_character(7,9,instanceLayer,decider_pathAndAttack)		
 gridObject_setStats(enemy,5,true,1,0)
+enemy.sprite_index = spr_baddy
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)

@@ -9,9 +9,11 @@ switch(state){
 				actionScript = noone
 				state = gridObject.idle
 				
+				var schedulerID = gridScheduler.id;
+				
 				if myTurn then gridCharacter_endOfTurn()
 				
-				gridScheduler_poke(noone)
+				if gridScheduler.id = schedulerID then gridScheduler_poke(noone)
 			}
 			//else: actionScript exists, has been executed, and is not finished
 		} else {

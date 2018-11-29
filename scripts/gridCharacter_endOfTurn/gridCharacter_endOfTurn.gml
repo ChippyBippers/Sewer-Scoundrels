@@ -1,5 +1,6 @@
 //check for any items you may have come across
-var item = grid_meeting_getInstance(gx,gy,gridObject_item);
+var item = grid_meeting_getInstance(gx,gy,gridObject_item),
+	tile = grid_meeting_getInstance(gx,gy,gridObject_tile);
 	
 if item != noone and ds_list_size(inventory) < inventorySlots {
 	var obj = item.object_index;
@@ -12,6 +13,11 @@ if item != noone and ds_list_size(inventory) < inventorySlots {
 	//remove item from world
 	instance_destroy(item)
 }
+
+with tile {
+	script_execute(steppedOnScript,other.id)
+}
+
 
 //todo: handle stepping on tiles (staircase, poison, etc)
 
