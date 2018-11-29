@@ -3,7 +3,7 @@ level += 1
 width = make_odd(15 + level * 3)
 height = make_odd(15 + level * 3)
 
-var enemy_count = floor(1 + level / 2)
+var enemy_count = floor(level*(5/4))
 
 with gridScheduler {
 	instance_destroy(self)
