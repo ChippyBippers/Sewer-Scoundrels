@@ -1,4 +1,4 @@
-/// @description SETUP FUCK
+/// @description SETUP ****
 target = noone
 
 camera = camera_create()

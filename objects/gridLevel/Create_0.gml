@@ -2,6 +2,8 @@ hp_pos = [16, 16]
 width = 15
 height = 15
 
+level = 0
+
 //Layers
 instanceLayer = layer_get_id("Instances")
 

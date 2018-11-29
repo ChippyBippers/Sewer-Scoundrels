@@ -1,3 +1,10 @@
+level += 1
+
+width = make_odd(15 + level * 3)
+height = make_odd(15 + level * 3)
+
+var enemy_count = floor(1 + level / 2)
+
 with gridScheduler {
 	instance_destroy(self)
 }
@@ -30,7 +37,7 @@ if r_point != undefined {
 	player.y = r_point[1] * 16
 }
 
-add_enemies(rooms, 3)
+add_enemies(rooms, enemy_count)
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)
