@@ -11,7 +11,8 @@ if keyboard_check_pressed(vk_shift){
 		angle = other.facingAngle
 	}
 	
-} else if keyboard_check_released(vk_shift){
+}
+if keyboard_check_released(vk_shift) or !window_has_focus(){
 	playerControl_holdAndOrientate = false
 	
 	with playerControl_orientator{
