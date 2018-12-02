@@ -8,11 +8,30 @@ gy = chunk[1]
 
 xDir = sign(gx-pgx)
 yDir = sign(gy-pgy)
+
 facingAngle = angleFromDir(xDir,yDir)
+if xDir !=0 image_xscale = xDir
+
 
 moveIter = 0
 actionScript = action_move
 
+//sprite setting
+
+var walkSprite = spriteRef_walk_lateral;
+switch(facingAngle){
+	case 90:
+		walkSprite = spriteRef_walk_up
+		break;
+	case 270:
+		walkSprite = spriteRef_walk_down
+		break;
+}
+
+if sprite_exists(walkSprite) then sprite_index = walkSprite
+
+
+//updating the pathfinding grid
 with gridRouter{
 	if (other.pgx>=0 && other.pgx<width) &&
 	(other.pgy>=0 && other.pgy<width){

@@ -386,7 +386,7 @@
             "Key": "55605e84-6e14-4cc7-89bb-a364a76915fb",
             "Value": {
                 "id": "d7a39fa9-c3c0-4db4-a8bf-c8c7e9b265a0",
-                "resourcePath": "sprites\\player_forward\\player_forward.yy",
+                "resourcePath": "sprites\\player_down\\player_down.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1210,7 +1210,7 @@
             "Key": "f9cc9416-7d64-4a89-99f4-6869c680f353",
             "Value": {
                 "id": "33f139f2-b8f6-43e0-9074-485528dafb93",
-                "resourcePath": "sprites\\player_back\\player_back.yy",
+                "resourcePath": "sprites\\player_up\\player_up.yy",
                 "resourceType": "GMSprite"
             }
         },

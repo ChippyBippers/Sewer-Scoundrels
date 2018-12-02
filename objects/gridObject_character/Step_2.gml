@@ -14,6 +14,9 @@ switch(state){
 				if myTurn then gridCharacter_endOfTurn()
 				
 				if gridScheduler.id = schedulerID then gridScheduler_poke(noone)
+				
+				//reset sprite
+				if sprite_exists(spriteRef_idle) then sprite_index = spriteRef_idle
 			}
 			//else: actionScript exists, has been executed, and is not finished
 		} else {
