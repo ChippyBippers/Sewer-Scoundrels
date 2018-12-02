@@ -17,6 +17,7 @@ cameraFollow = false
 tookDamage = false //determine if hp regen this turn
 
 //misc variables for actions & deciders
+actionUpdated = false
 
 pgx = gx
 pgy = gy

@@ -12,6 +12,7 @@ player = instance_create_layer(0, 0, instanceLayer, gridObject_character)
 with player {
 	deciderScript = decider_player
 	
+	sprite_index = player_idle
 	spriteRef_idle = player_idle
 	spriteRef_walk_down = player_down
 	spriteRef_walk_up = player_up

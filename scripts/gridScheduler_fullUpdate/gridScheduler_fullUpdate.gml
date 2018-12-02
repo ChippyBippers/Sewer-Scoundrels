@@ -33,6 +33,18 @@ with gridScheduler {
 	if (chainable && (pNone || pChainable)) ||
 	(!chainable && pNone)
 	{
+		//increment important variables
+		currentActive++
+		listIter++;
+		if listIter>=ds_list_size(entities) {
+			listIter = 0
+			turn++
+			show_debug_message("/// Turn "+string(turn)+" ///")
+		}
+		
+		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")
+		
+		//schedule the entity
 		if script_exists(actionSetup) then with nextEntity{
 			//give them the o-k
 			script_execute(deciderScript,true);
@@ -44,19 +56,12 @@ with gridScheduler {
 				script_execute(actionSetup);//execute with no args
 			else
 				script_execute(actionSetup,actionArgs);//execute with args
+			
+			//attempt an action update
+			gridCharacter_actionUpdate()
 		}
 		
-		currentActive++
-		
-		listIter++;
-		if listIter>=ds_list_size(entities) {
-			listIter = 0
-			turn++
-			show_debug_message("/// Turn "+string(turn)+" ///")
-		}
-		
-		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")
-		
+		//perform a chain if possible
 		if chainable then {
 			show_debug_message("Scheduler is attemtping to chain to an additional entity")
 			gridScheduler_fullUpdate(actionSetup) //try to continue the chain!

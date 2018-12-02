@@ -14,7 +14,6 @@ if xDir !=0 image_xscale = xDir
 
 
 moveIter = 0
-actionScript = action_move
 
 //sprite setting
 
@@ -50,3 +49,7 @@ with gridRouter{
 		mp_grid_add_cell(gridMap,other.gx,other.gy)	
 	}
 }
+
+//return 2 to call one iteration of action_move directly afterwards
+actionScript = action_move
+return 2
