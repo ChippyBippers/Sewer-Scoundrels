@@ -32,3 +32,10 @@ hp = maxHP
 inventory = ds_list_create()
 itemMap_scripts = ds_map_create()
 itemMap_sprites = ds_map_create()
+
+//sprite references
+spriteRef_idle = noone
+
+spriteRef_walk_up = noone
+spriteRef_walk_down = noone
+spriteRef_walk_lateral = noone
