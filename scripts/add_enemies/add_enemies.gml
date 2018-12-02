@@ -10,7 +10,13 @@ for (var i = 0; i < enemy_count; i += 1) {
 		enemy = gridObject_spawn_character(r_point[0],r_point[1],instanceLayer,decider_pathAndAttack)
 		
 		gridObject_setStats(enemy,5,true,1,0)
-		enemy.sprite_index = spr_baddy
+		with enemy {
+			sprite_index = player_idle
+			spriteRef_idle = player_idle
+			spriteRef_walk_down = player_down
+			spriteRef_walk_up = player_up
+			spriteRef_walk_lateral = player_lateral
+		}
 		/*
 		enemy = instance_create_layer(16 * r_point[0], 16 * r_point[1], "Instances", gridObject_character)
 		with enemy {
