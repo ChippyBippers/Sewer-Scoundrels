@@ -45,7 +45,7 @@ if (vectX!=0 || vectY!=0){
 		comittedArgs = [xDir,yDir]	
 	} else if keyboard_check_pressed(ord("Z")) {
 		//use an item
-		if !ds_list_empty(inventory) {
+		if itemSelected < ds_list_size(inventory){
 			//todo: actual item selection instead of just using the first item
 			var item = inventory[| itemSelected];
 			ds_list_delete(inventory, itemSelected)
