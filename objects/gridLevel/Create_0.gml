@@ -17,6 +17,7 @@ with player {
 	spriteRef_walk_down = player_down
 	spriteRef_walk_up = player_up
 	spriteRef_walk_lateral = player_lateral
+	inventorySlots = 5
 }
 
 //data structures
