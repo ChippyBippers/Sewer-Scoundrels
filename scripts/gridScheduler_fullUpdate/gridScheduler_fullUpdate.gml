@@ -45,20 +45,22 @@ with gridScheduler {
 		show_debug_message("Entity has been scheduled! There are "+string(currentActive)+" active entities.")
 		
 		//schedule the entity
-		if script_exists(actionSetup) then with nextEntity{
+		with nextEntity{
 			//give them the o-k
 			script_execute(deciderScript,true);
 			
 			state = gridObject.acting
 			myTurn = true //enables end-of-turn checks
 			
-			if actionArgs = noone then
-				script_execute(actionSetup);//execute with no args
-			else
-				script_execute(actionSetup,actionArgs);//execute with args
+			if actionSetup != noone {
+				if actionArgs = noone then
+					script_execute(actionSetup);//execute with no args
+				else
+					script_execute(actionSetup,actionArgs);//execute with args
 			
-			//attempt an action update
-			gridCharacter_actionUpdate()
+				//attempt an action update
+				gridCharacter_actionUpdate()
+			}
 		}
 		
 		//perform a chain if possible
