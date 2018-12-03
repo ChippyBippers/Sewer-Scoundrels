@@ -1,3 +1,5 @@
+if UI.menu_open return;
+
 var vectX = keyboard_check(vk_right)-keyboard_check(vk_left),
 	vectY = keyboard_check(vk_down)-keyboard_check(vk_up),
 	comittedAction = noone,
@@ -45,8 +47,8 @@ if (vectX!=0 || vectY!=0){
 		//use an item
 		if !ds_list_empty(inventory) {
 			//todo: actual item selection instead of just using the first item
-			var item = inventory[| 0];
-			ds_list_delete(inventory,0)
+			var item = inventory[| itemSelected];
+			ds_list_delete(inventory, itemSelected)
 			
 			comittedAction = itemMap_scripts[? item]
 		}
@@ -69,4 +71,19 @@ if comittedAction != noone {
 		gridScheduler_poke(comittedAction)
 		currentActive++
 	}
+}
+
+
+if keyboard_check_pressed(ord("E")){
+	itemSelected += 1
+}
+else if keyboard_check_pressed(ord("Q")) {
+	itemSelected -= 1
+}
+
+if itemSelected < 0 {
+	itemSelected = inventorySlots - 1
+}
+else if itemSelected >= inventorySlots {
+	itemSelected = 0
 }
