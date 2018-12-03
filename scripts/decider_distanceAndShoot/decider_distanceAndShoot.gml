@@ -38,10 +38,10 @@ if argument0 {
 			dy = yyy //line up shot on y axis	
 		}
 		
-		if grid_collision_point(gx,gy+dy) or grid_meeting(gx,gy+dy,gridObject_character) {
+		if grid_collision_point(gx+dx,gy+dy) or grid_meeting(gx+dx,gy+dy,gridObject_character) {
 			dy = 0
 		}
-		if grid_collision_point(gx+dx,gy) or grid_meeting(gx+dx,gy,gridObject_character) {
+		if grid_collision_point(gx+dx,gy+dy) or grid_meeting(gx+dx,gy+dy,gridObject_character) {
 			dx = 0
 		}
 		
@@ -53,7 +53,7 @@ if argument0 {
 		if grid_collision_line(gx,gy,player.gx,player.gy){
 			counter = 0 //go back to the Sit Stage	
 			
-		} else if mag < 5 and (xx == 0 || yy == 0 || xx == yy) {
+		} else if mag < 10 and (xx == 0 || yy == 0 || xx == yy) {
 			xDir = sign(xx)
 			yDir = sign(yy)
 		
