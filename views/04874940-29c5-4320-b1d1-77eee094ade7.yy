@@ -9,7 +9,8 @@
         "65386ecd-61f6-48ac-9593-b75b5d9c2c9d",
         "90dd175b-0bbf-4e0c-ad68-3261158eb881",
         "d9c84453-011a-458b-9ea8-89355995825b",
-        "9d3249fa-598c-4925-a51f-fa6f8d08222d"
+        "9d3249fa-598c-4925-a51f-fa6f8d08222d",
+        "e12ae089-8f09-45d4-b121-9f5498bfbac7"
     ],
     "filterType": "GMObject",
     "folderName": "gridObjects",

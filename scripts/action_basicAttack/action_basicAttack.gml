@@ -9,7 +9,6 @@ if attackIter>=attackTime {
 	return true
 } else if attackIter>=mid{
 	if attackIter = mid then with attackTarget {
-		gridScheduler_enqueue(id,[actionSetup_hurt,noone])
 		gridObject_applyDamage(other.id,id)
 	}
 	

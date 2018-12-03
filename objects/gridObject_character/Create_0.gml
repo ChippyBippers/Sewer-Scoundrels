@@ -25,6 +25,7 @@ pgy = gy
 moveIter = 0
 
 counter = 0
+doneChild = 0
 
 //combat stats
 maxHP = 10
