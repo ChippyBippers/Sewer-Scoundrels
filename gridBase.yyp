@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "9ade5868-2602-4c7e-8a7d-9343cbcd8ebc",
+            "Value": {
+                "id": "e229675e-9a1a-4d59-a93f-66f183d3a40f",
+                "resourcePath": "datafiles_yy\\font.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "9ce90cbb-9600-415d-b5c0-2699c3be4c25",
             "Value": {
                 "id": "6f035931-c9b3-474c-9dc1-f53f1953cdb2",
