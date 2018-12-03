@@ -13,6 +13,8 @@ if moveIter>=moveTime {
 	gx+=xDir
 	gy+=yDir
 	
+	//show_debug_message(string_cartesian(gx,gy))
+	
 	//collision checks
 	var gObj = grid_meeting_getInstance(gx,gy,gridObject_character);
 	

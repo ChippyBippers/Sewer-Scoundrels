@@ -22,35 +22,45 @@ if argument0 {
 		}
 	}
 	
-	var xx = player.gx-gx, yy = player.gy-gy;
+	var xx = player.gx-gx, yy = player.gy-gy,
+		mag = max(abs(xx),abs(yy));
 	
 	if counter = 1 {
-		var	dx = 0, dy = 0,
-			mag = max(abs(xx),abs(yy));
+		var	xxx = sign(xx), yyy = sign(yy),
+			dx = 0, dy = 0;
 		//determine which axis you're closer on -> which axis to back up on
 		
 		if abs(xx)<abs(yy){
-			dx = sign(xx) //line up shot on x axis
-			if mag<5 then dy = -sign(yy) //increase distance on y axis
+			dx = xxx //line up shot on x axis
+			if mag<=4 then dy = -yyy //increase distance on y axis
 		} else if abs(xx)>abs(yy) {
-			if mag<5 then dx = -sign(xx) //increase distance on x axis
-			dy = sign(yy) //line up shot on y axis	
-		} else {
-			dx = -sign(xx)	
+			if mag<=4 then dx = -xxx //increase distance on x axis
+			dy = yyy //line up shot on y axis	
 		}
 		
-		show_debug_message(string(dx)+", "+string(dy))
+		if grid_collision_point(gx,gy+dy) or grid_meeting(gx,gy+dy,gridObject_character) {
+			dy = 0
+		}
+		if grid_collision_point(gx+dx,gy) or grid_meeting(gx+dx,gy,gridObject_character) {
+			dx = 0
+		}
+		
+		//show_debug_message(string_cartesian(dx,dy))
 		
 		return [actionSetup_move,[gx+dx,gy+dy]]
 		
 	} else if counter = 2 {
-		xDir = sign(xx)
-		yDir = sign(yy)
-		if abs(xx)<abs(yy) xDir = 0
-		else yDir = 0
+		if grid_collision_line(gx,gy,player.gx,player.gy){
+			counter = 0 //go back to the Sit Stage	
+			
+		} else if mag < 5 and (xx == 0 || yy == 0 || xx == yy) {
+			xDir = sign(xx)
+			yDir = sign(yy)
 		
-		show_debug_message("Schut")
-		return [actionSetup_projectile,[gridObject_projectile]]
+			//show_debug_message("Schut")
+			return [actionSetup_projectile,[gridObject_projectile]]
+		}
+		return [actionSetup_move,[gx,gy]]	
 	}
 }
 

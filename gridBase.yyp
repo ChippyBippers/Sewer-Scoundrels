@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "37e725b1-44d8-4e1d-ad62-e10c38e2179a",
+            "Value": {
+                "id": "7dbdf0ec-d5bb-4a8d-8834-42a66d6826e2",
+                "resourcePath": "scripts\\spawn_bug\\spawn_bug.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3943fe41-199c-45db-902a-e636b4fae6c2",
             "Value": {
                 "id": "82f8db17-ef28-4d41-8517-3ec9bcb8aac2",
@@ -556,6 +564,14 @@
                 "id": "a36ac9bd-8d37-499d-9ed0-b7446d5ca3dd",
                 "resourcePath": "sprites\\spr_attack\\spr_attack.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76dc7584-2c9a-4ee4-b089-8dbedd154da1",
+            "Value": {
+                "id": "bfb2f538-84b0-429f-8dbe-9b4206c2be46",
+                "resourcePath": "views\\76dc7584-2c9a-4ee4-b089-8dbedd154da1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1359,6 +1375,14 @@
             }
         },
         {
+            "Key": "f6d8903f-04e1-4707-b171-c46355d70db1",
+            "Value": {
+                "id": "a7fcf952-3911-40b2-b159-5905b5efd9b2",
+                "resourcePath": "scripts\\spawn_enemyRat\\spawn_enemyRat.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f7a756a1-4953-4d98-8670-8ac34df8eea9",
             "Value": {
                 "id": "b3d48b6e-0459-41e1-b301-54858fb81adf",
@@ -1447,6 +1471,8 @@
         "e39b23c2-ceec-42de-a98b-6449c3e60405",
         "0b6f4533-d71a-4133-b299-400fe8346bdf",
         "798313a6-a061-42e0-b16f-7cc5d015ae5a",
+        "f6d8903f-04e1-4707-b171-c46355d70db1",
+        "37e725b1-44d8-4e1d-ad62-e10c38e2179a",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
         "a62cf6a8-d057-4f02-90e0-402c3a21f978",
         "f89f0d0f-b901-430b-9ff8-e32a8e1f681d",

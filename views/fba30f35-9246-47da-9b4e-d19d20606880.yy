@@ -11,7 +11,8 @@
         "69d2a158-0e89-4d2e-b133-e73ff0979268",
         "e39b23c2-ceec-42de-a98b-6449c3e60405",
         "0b6f4533-d71a-4133-b299-400fe8346bdf",
-        "798313a6-a061-42e0-b16f-7cc5d015ae5a"
+        "798313a6-a061-42e0-b16f-7cc5d015ae5a",
+        "76dc7584-2c9a-4ee4-b089-8dbedd154da1"
     ],
     "filterType": "GMScript",
     "folderName": "gridObject",
