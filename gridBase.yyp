@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "6a627562-51c7-4f7b-9282-f28816e793bd",
+            "Value": {
+                "id": "dfbb99bf-8729-4361-b6ba-f27d7ede7767",
+                "resourcePath": "scripts\\grid_collision_line_characters\\grid_collision_line_characters.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6bc8e992-26b1-453f-b18b-0809dd3f534f",
             "Value": {
                 "id": "129ce04f-614d-468e-92ae-f3bb587abfcd",
@@ -1530,7 +1538,8 @@
         "b5c403c3-b43f-463f-91fa-827d25f06a9f",
         "dbe5c8f6-dc75-4316-933a-2e97dd49d47a",
         "7bddb845-24fc-40ec-b768-fc2c292ec674",
-        "b7227813-e9ba-40b2-8a1d-fe77ce47093a"
+        "b7227813-e9ba-40b2-8a1d-fe77ce47093a",
+        "6a627562-51c7-4f7b-9282-f28816e793bd"
     ],
     "tutorial": ""
 }
