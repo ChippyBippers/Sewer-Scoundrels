@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "104439c9-bc1a-4fde-9cc3-b936d9090175",
+            "Value": {
+                "id": "719eb2c5-87ce-4a13-80bd-225a1f054182",
+                "resourcePath": "scripts\\decider_alligator\\decider_alligator.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "10b71114-819e-47cd-978d-7e931a4f6ba4",
             "Value": {
                 "id": "f09d8317-e957-4365-804a-67fbe230685c",
@@ -148,6 +156,14 @@
                 "id": "ced343a5-cbc0-4625-92d8-5a78b8e2f35e",
                 "resourcePath": "views\\11f213c0-1a04-46a2-be31-2a10e8ba1d80.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "14106a28-2db9-4e5c-8632-52c0bb3e40d6",
+            "Value": {
+                "id": "6a4deb02-94ec-4dad-8003-65d7252403c7",
+                "resourcePath": "sprites\\alligator_idle\\alligator_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -324,6 +340,14 @@
                 "id": "526d44e9-0ac6-4c6b-98ae-8b137d43ded9",
                 "resourcePath": "sprites\\spr_item\\spr_item.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e9a5c60-f9ed-4f09-90dd-23ab364aca13",
+            "Value": {
+                "id": "be235714-3e98-4579-9349-7d17ef45baa1",
+                "resourcePath": "scripts\\spawn_alligator\\spawn_alligator.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1063,6 +1087,14 @@
             }
         },
         {
+            "Key": "c3539478-d471-48ab-b213-374feddd2633",
+            "Value": {
+                "id": "01241427-4286-4782-8952-44e0488efa28",
+                "resourcePath": "views\\c3539478-d471-48ab-b213-374feddd2633.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c416ec5a-8edb-4adb-9b28-75261360c24e",
             "Value": {
                 "id": "1f3a6ac9-7c41-486c-9846-517410fc425b",
@@ -1497,6 +1529,7 @@
         "b224e25d-1ddd-4146-a603-61829b5a12ce",
         "99816132-8b48-4a6e-90e0-4a17403cf564",
         "2e1a5995-81cc-44e3-918f-8aeefb1f9113",
+        "104439c9-bc1a-4fde-9cc3-b936d9090175",
         "ae44499c-5571-4fe6-8a5b-6f41195adfee",
         "66edd850-6679-4b05-a647-094fc50c7069",
         "7c3eb408-97cb-40d1-b288-85959f6ab882",
@@ -1512,6 +1545,7 @@
         "0b6f4533-d71a-4133-b299-400fe8346bdf",
         "798313a6-a061-42e0-b16f-7cc5d015ae5a",
         "f6d8903f-04e1-4707-b171-c46355d70db1",
+        "3e9a5c60-f9ed-4f09-90dd-23ab364aca13",
         "37e725b1-44d8-4e1d-ad62-e10c38e2179a",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
         "a62cf6a8-d057-4f02-90e0-402c3a21f978",
