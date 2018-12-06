@@ -7,6 +7,6 @@ for (var i = 0; i < enemy_count; i += 1) {
 	r_point = room_random_point(ran_room, gridObject_character)
 	if r_point != undefined {
 		
-		var enemy = spawn_bug(r_point[0],r_point[1])
+		var enemy = spawn_alligator(r_point[0],r_point[1])
 	}
 }

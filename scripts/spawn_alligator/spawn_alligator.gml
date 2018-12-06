@@ -1,4 +1,4 @@
-enemy = gridObject_spawn_character(argument0,argument1,"instances",decider_pathAndAttack)
+enemy = gridObject_spawn_character(argument0,argument1,"instances",decider_alligator)
 		
 gridObject_setStats(enemy,20,true,4,0)
 with enemy {
