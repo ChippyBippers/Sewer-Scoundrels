@@ -3,5 +3,5 @@ draw_set_font(fnt_pressStart)
 menu_open = false
 
 menu_hovered = 0
-menu_options = ["Resume", "Fullscreen:"]
-menu_scritps = [menu_resume, menu_fullscreen]
+menu_options = ["Resume", "Fullscreen:", "Quit"]
+menu_scritps = [menu_resume, menu_fullscreen, menu_quit]

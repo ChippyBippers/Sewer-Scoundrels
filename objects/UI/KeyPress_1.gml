@@ -8,7 +8,7 @@ else if keyboard_key == vk_down {
 else if keyboard_key == vk_up {
 	menu_hovered -= 1
 }
-else if keyboard_key == vk_enter {
+else if menu_open and (keyboard_key == vk_enter or keyboard_key == ord("Z") or keyboard_key == vk_space) {
 	script_execute(menu_scritps[menu_hovered])
 }
 

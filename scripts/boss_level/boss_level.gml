@@ -62,33 +62,7 @@ if r_point != undefined {
 }
 
 // Add "Boss Enemies"
-var enemy = gridObject_spawn_character(5,7,instanceLayer,decider_pathAndAttack);	
-gridObject_setStats(enemy,5,true,1,0)
-with enemy {
-	sprite_index = player_idle
-	spriteRef_idle = player_idle
-	spriteRef_walk_down = player_down
-	spriteRef_walk_up = player_up
-	spriteRef_walk_lateral = player_lateral
-}
-enemy = gridObject_spawn_character(9,7,instanceLayer,decider_pathAndAttack)		
-gridObject_setStats(enemy,5,true,1,0)
-with enemy {
-	sprite_index = player_idle
-	spriteRef_idle = player_idle
-	spriteRef_walk_down = player_down
-	spriteRef_walk_up = player_up
-	spriteRef_walk_lateral = player_lateral
-}
-enemy = gridObject_spawn_character(7,9,instanceLayer,decider_pathAndAttack)		
-gridObject_setStats(enemy,5,true,1,0)
-with enemy {
-	sprite_index = player_idle
-	spriteRef_idle = player_idle
-	spriteRef_walk_down = player_down
-	spriteRef_walk_up = player_up
-	spriteRef_walk_lateral = player_lateral
-}
+var enemy = spawn_alligator(r_point[0],r_point[1])
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)

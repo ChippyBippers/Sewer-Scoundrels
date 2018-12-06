@@ -3,7 +3,8 @@ level += 1
 width = make_odd(15 + level * 3)
 height = make_odd(15 + level * 3)
 
-var enemy_count = floor(level*1.2);
+var rat_count = floor(level*1.2);
+var bug_count = floor(level*0.6);
 
 with gridScheduler {
 	instance_destroy(self)
@@ -37,7 +38,11 @@ if r_point != undefined {
 	player.y = r_point[1] * 16
 }
 
-add_enemies(rooms, enemy_count)
+if rat_count > 0
+	add_enemies(rooms, rat_count, spawn_enemyRat);
+	
+if bug_count > 0
+	add_enemies(rooms, bug_count, spawn_bug);
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)
