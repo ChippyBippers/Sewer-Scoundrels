@@ -4,5 +4,5 @@ else if argument[1] == "status" {
 	return ""
 }
 else if argument[1] == "use" {
-	UI.menu_open = false
+	room_restart()
 }

@@ -80,7 +80,7 @@ if menu_open {
 	// Options
 	draw_set_color(make_color_rgb(253, 245, 241))
 	for (var i = 0; i < array_length_1d(menu_options); i++) {
-		var text = (i == menu_hovered ? ">" : " ") + menu_options[i] + " " + script_execute(menu_scritps[i], "status")
+		var text = (i == menu_hovered ? ">" : " ") + menu_options[i] + " " + script_execute(menu_scritps[i], 0, "status")
 		draw_text_transformed(40, 32 + 8*(i+2), text, 0.5, 0.5, 0)
 	}
 	

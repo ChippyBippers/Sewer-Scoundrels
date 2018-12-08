@@ -12,6 +12,10 @@ if item != noone and ds_list_size(inventory) < inventorySlots {
 	
 	//remove item from world
 	instance_destroy(item)
+	
+	if deciderScript == decider_player {
+		audio_play_sound(snd_pickup, 0, false)
+	}
 }
 
 with tile {
