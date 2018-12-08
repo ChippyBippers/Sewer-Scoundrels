@@ -6,7 +6,9 @@ if image_xscale = -1 {
 	sxx = 16
 }
 
-draw_sprite_ext(sprite_index,image_index,x+sxx,y,image_xscale,1,renderAngle,c_white,1)
+var drawColor = gridObject_hasStatus(statuses.poison)?c_fuchsia: c_white;
+draw_sprite_ext(sprite_index,image_index,x+sxx,y,image_xscale,1,renderAngle,drawColor,1)
+
 //draw_sprite_ext(spr_directionIndicator,0,x+8+12*xDir,y+8+12*yDir,1,1,facingAngle,c_white,1)
 
 /*

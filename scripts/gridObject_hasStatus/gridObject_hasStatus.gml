@@ -1,0 +1,1 @@
+return ds_map_exists(myStatuses,argument0) && myStatuses[? argument0]>0

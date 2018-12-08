@@ -19,7 +19,10 @@ if moveIter>=moveTime {
 	var gObj = grid_meeting_getInstance(gx,gy,gridObject_character);
 	
 	if instance_exists(gObj){
-		if instance_exists(parent) gridObject_applyDamage(parent,gObj)
+		//if instance_exists(parent) gridObject_applyDamage(parent,gObj)
+		with gObj{
+			gridObject_addStatus(statuses.poison,2)		
+		}
 		instance_destroy()
 	} else {
 		with gridLevel {

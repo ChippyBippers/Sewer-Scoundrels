@@ -12,7 +12,12 @@
         "e39b23c2-ceec-42de-a98b-6449c3e60405",
         "0b6f4533-d71a-4133-b299-400fe8346bdf",
         "798313a6-a061-42e0-b16f-7cc5d015ae5a",
-        "76dc7584-2c9a-4ee4-b089-8dbedd154da1"
+        "76dc7584-2c9a-4ee4-b089-8dbedd154da1",
+        "b1def4e9-b9cf-47bd-aacd-005b2f51c4b1",
+        "ab74fc8d-f7b8-490f-ab1e-176c2b26b5f5",
+        "3dbc76ad-37ae-4044-92a0-d143fd3731ed",
+        "35fd0e5d-ac0c-4607-be81-19d15bddbf14",
+        "9755c62a-bc1e-41f2-9187-ca96fb329fcc"
     ],
     "filterType": "GMScript",
     "folderName": "gridObject",

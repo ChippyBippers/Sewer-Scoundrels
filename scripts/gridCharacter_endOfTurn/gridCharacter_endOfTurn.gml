@@ -19,16 +19,13 @@ with tile {
 }
 
 
-//todo: handle stepping on tiles (staircase, poison, etc)
-
-//todo: apply status effects (poison damage, etc)
+gridCharacter_applyStatuses()
 
 //hp regeneration(only for players)
 if deciderScript = decider_player{
 	var hpRate = 0.05;
 
-	hpRate *= !tookDamage
-	//todo: poison disables healing (hpRate = 0)
+	hpRate *= !tookDamage * !gridObject_hasStatus(statuses.poison)
 
 	hp = min(hp+maxHP*hpRate, maxHP)
 }

@@ -35,6 +35,8 @@ inventory = ds_list_create()
 itemMap_scripts = ds_map_create()
 itemMap_sprites = ds_map_create()
 
+myStatuses = ds_map_create()
+
 //sprite references
 spriteRef_idle = noone
 
