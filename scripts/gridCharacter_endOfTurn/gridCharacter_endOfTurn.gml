@@ -23,13 +23,15 @@ with tile {
 
 //todo: apply status effects (poison damage, etc)
 
-//hp regeneration
-var hpRate = 0.05;
+//hp regeneration(only for players)
+if deciderScript = decider_player{
+	var hpRate = 0.05;
 
-hpRate *= !tookDamage
-//todo: poison disables healing (hpRate = 0)
+	hpRate *= !tookDamage
+	//todo: poison disables healing (hpRate = 0)
 
-hp = min(hp+maxHP*hpRate, maxHP)
+	hp = min(hp+maxHP*hpRate, maxHP)
+}
 
 tookDamage = false
 myTurn = false

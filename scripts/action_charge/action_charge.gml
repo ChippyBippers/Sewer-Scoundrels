@@ -6,11 +6,7 @@ if moveIter>=(moveTime/4) {
 	moveIter = 0
 	gx+=xDir
 	gy+=yDir
-	
-	with gridObject_character{
-		show_debug_message(string(id)+": "+string_cartesian(gx,gy))	
-	}
-	
+
 	//show_debug_message(string_cartesian(gx,gy))
 	
 	//collision checks

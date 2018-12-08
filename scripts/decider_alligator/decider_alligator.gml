@@ -27,14 +27,14 @@ if counter = 0 {
 		xxx = sign(dx), yyy = sign(dy),
 		fx = 0, fy = 0;
 	
-	show_debug_message(string_cartesian(dx,dy))
+	//show_debug_message(string_cartesian(dx,dy))
 	
 	//check for lineup
 	if (dx = 0 || dy = 0) || (abs(dx) == abs(dy)) {
 		//setup for charge	
 		canCharge = true
-		chargeX = player.gx-xxx
-		chargeY = player.gy-yyy
+		chargeX = player.gx
+		chargeY = player.gy
 		
 		fx = -xxx
 		fy = -yyy
@@ -52,18 +52,6 @@ if counter = 0 {
 	
 } else if counter = 1 {
 	canCharge = false
-	
-	var dx = sign(chargeX-gx), dy = sign(chargeY-gy), doIt = true;
-	//if player spot vacated, move one extra tile to occupy that spot
-	
-	with gridObject_character {
-		if gx = other.chargeX+dx && gy = other.chargeY+dy then doIt = false;	
-	}
-	
-	if doIt {
-		chargeX+=dx
-		chargeY+=dy
-	}
 	
 	return [actionSetup_charge,[chargeX,chargeY]]
 }

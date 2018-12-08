@@ -11,6 +11,8 @@ if xDir !=0 image_xscale = xDir
 
 moveIter = 0
 
+show_debug_message(string_cartesian(tgx-gx,tgy-gy))
+
 //moveLimit: # of tiles to move total
 moveCount = 0
 moveLimit = max(xDir*(tgx-gx),yDir*(tgy-gy))
