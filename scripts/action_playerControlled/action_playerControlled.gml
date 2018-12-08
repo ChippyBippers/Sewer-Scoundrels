@@ -43,7 +43,6 @@ if (vectX!=0 || vectY!=0){
 		//basicAttack
 		comittedAction = actionSetup_basicAttack
 		comittedArgs = [xDir,yDir]	
-		audio_play_sound(snd_rat_attack, 0, false)
 	} else if keyboard_check_pressed(ord("Z")) {
 		//use an item
 		if itemSelected < ds_list_size(inventory){

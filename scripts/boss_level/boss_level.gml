@@ -35,7 +35,7 @@ for (var yy = 0; yy < height; yy += 1) {
 
 // Add single room
 rooms = ds_list_create()
-inst = instance_create_layer(0, 0, 0, gridRoom)
+inst = instance_create_layer(0, 0, "Instances", gridRoom)
 with (inst) {
 	r_width = 13
 	r_height = 13

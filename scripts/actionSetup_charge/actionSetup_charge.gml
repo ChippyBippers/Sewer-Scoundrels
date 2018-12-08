@@ -51,6 +51,7 @@ if xDir != 0 || yDir != 0 {
 		}
 	}
 }
+audio_play_sound(snd_gator_attack, 0, false)
 //return 2 to call one iteration of action_move directly afterwards
 actionScript = action_charge
 return 2

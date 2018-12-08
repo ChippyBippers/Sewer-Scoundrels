@@ -11,3 +11,5 @@ attackTarget = grid_meeting_getInstance(attack_tx,attack_ty,gridObject_character
 
 attackIter = 0
 attackTime = moveTime
+
+audio_play_sound(snd_rat_attack, 0, false)
