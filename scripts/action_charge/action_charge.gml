@@ -1,17 +1,15 @@
-x = lerp(gx,gx+xDir,moveIter/(moveTime/2))*16
-y = lerp(gy,gy+yDir,moveIter/(moveTime/2))*16
+x = lerp(gx,gx+xDir,moveIter/(moveTime/4))*16
+y = lerp(gy,gy+yDir,moveIter/(moveTime/4))*16
 
-if moveIter>=(moveTime/2) {
-	iterations++
-	
-	if iterations=maxIterations instance_destroy()
-	
+if moveIter>=(moveTime/4) {
 	moveCount++
 	moveIter = 0
 	gx+=xDir
 	gy+=yDir
 	
-	
+	with gridObject_character{
+		show_debug_message(string(id)+": "+string_cartesian(gx,gy))	
+	}
 	
 	//show_debug_message(string_cartesian(gx,gy))
 	
@@ -19,7 +17,7 @@ if moveIter>=(moveTime/2) {
 	var gObj = grid_meeting_getInstance(gx+xDir,gy+yDir,gridObject_character);
 	
 	if instance_exists(gObj){
-		if instance_exists(parent) gridObject_applyDamage(parent,gObj)
+		gridObject_applyDamage(id,gObj)
 		return true
 	} else {
 		with gridLevel {

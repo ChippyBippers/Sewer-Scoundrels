@@ -62,7 +62,7 @@ if r_point != undefined {
 }
 
 // Add "Boss Enemies"
-var enemy = spawn_alligator(r_point[0],r_point[1])
+var enemy = spawn_alligator(5,5)
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)
