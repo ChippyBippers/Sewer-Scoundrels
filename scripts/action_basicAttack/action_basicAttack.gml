@@ -18,5 +18,4 @@ if attackIter>=attackTime {
 	x = lerp(gx,attack_tx,attackIter/mid)*16	
 	y = lerp(gy,attack_ty,attackIter/mid)*16	
 }
-
 return false

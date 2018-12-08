@@ -11,5 +11,6 @@ with instance_create_layer(x,y,layer,obj) {
 
 childActive = 1
 
+audio_play_sound(snd_bug_attack, 0, false)
 actionScript = action_projectile
 return 0

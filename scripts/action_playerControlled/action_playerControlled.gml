@@ -43,12 +43,14 @@ if (vectX!=0 || vectY!=0){
 		//basicAttack
 		comittedAction = actionSetup_basicAttack
 		comittedArgs = [xDir,yDir]	
+		audio_play_sound(snd_rat_attack, 0, false)
 	} else if keyboard_check_pressed(ord("Z")) {
 		//use an item
 		if itemSelected < ds_list_size(inventory){
 			//todo: actual item selection instead of just using the first item
 			var item = inventory[| itemSelected];
 			ds_list_delete(inventory, itemSelected)
+			audio_play_sound(snd_use_item, 0, false)
 			
 			comittedAction = itemMap_scripts[? item]
 		}

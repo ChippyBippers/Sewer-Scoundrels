@@ -49,6 +49,10 @@ if xDir != 0 || yDir != 0 {
 		}
 	}
 }
+// Play audio
+if deciderScript == decider_player {
+	audio_play_sound(snd_walk, 0, false)
+}
 //return 2 to call one iteration of action_move directly afterwards
 actionScript = action_move
 return 2
