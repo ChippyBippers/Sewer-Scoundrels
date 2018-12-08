@@ -12,5 +12,4 @@ view_hport[0] = height
 view_visible[0] = true
 view_enabled = true
 
-surface_resize(application_surface,width,height)
-window_set_size(width,height)
+surface_resize(application_surface,240,160)
