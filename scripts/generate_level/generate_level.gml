@@ -34,7 +34,7 @@ for (var i = 0; i < room_attempts; i += 1) {
 	
 	// If it is valid create it and add it to the list
 	if valid {
-		inst = instance_create_layer(0, 0, 0, gridRoom)
+		inst = instance_create_layer(0, 0, "Instances", gridRoom)
 		with (inst) {
 			r_width = other.r_width
 			r_height = other.r_height

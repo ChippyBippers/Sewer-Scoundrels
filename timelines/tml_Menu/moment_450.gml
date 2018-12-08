@@ -1,0 +1,1 @@
+obj_MenuMouse.sprite_index = spr_msRight;

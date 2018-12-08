@@ -1,0 +1,1 @@
+obj_MenuMouse.image_speed = 0;
