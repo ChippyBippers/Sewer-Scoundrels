@@ -65,5 +65,5 @@ if counter = 0 {
 		chargeY+=dy
 	}
 	
-	return [actionSetup_move,[chargeX,chargeY]]
+	return [actionSetup_charge,[chargeX,chargeY]]
 }
