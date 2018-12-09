@@ -18,6 +18,3 @@ with gridRouter{
 }
 
 
-ds_list_destroy(inventory)
-ds_map_destroy(itemMap_scripts)
-ds_map_destroy(itemMap_sprites)

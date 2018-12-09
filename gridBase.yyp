@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "1d935803-6848-4150-84a4-3381fbee9788",
+            "Value": {
+                "id": "b8a9c56a-5cf7-4ee5-be48-7fad016b7405",
+                "resourcePath": "scripts\\gridCharacter_resetStatuses\\gridCharacter_resetStatuses.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1e9ea64f-018a-4c30-8b58-9fdc5d4d73a4",
             "Value": {
                 "id": "9cd1b935-76e8-4682-a6a3-73ea0b16e1bd",
@@ -2027,6 +2035,7 @@
         "35fd0e5d-ac0c-4607-be81-19d15bddbf14",
         "9755c62a-bc1e-41f2-9187-ca96fb329fcc",
         "7e8b7199-920d-478f-8c0a-8cc791ca0764",
+        "1d935803-6848-4150-84a4-3381fbee9788",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
         "a62cf6a8-d057-4f02-90e0-402c3a21f978",
         "f89f0d0f-b901-430b-9ff8-e32a8e1f681d",

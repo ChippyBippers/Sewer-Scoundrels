@@ -38,6 +38,10 @@ if r_point != undefined {
 	player.y = r_point[1] * 16
 }
 
+with player{
+	gridCharacter_resetStatuses()	
+}
+
 if rat_count > 0
 	add_enemies(rooms, rat_count, spawn_enemyRat);
 	
