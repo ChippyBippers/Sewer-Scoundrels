@@ -1,7 +1,11 @@
 var chunk = argument0,
-	obj = chunk[0];
+	pspr = chunk[0],
+	pscr = chunk[1];
 
-with instance_create_layer(x,y,layer,obj) {
+with instance_create_layer(x,y,layer,gridObject_projectile) {
+	projectileScript = pscr
+	sprite_index = pspr
+	
 	parent = other.id
 	xDir = other.xDir
 	yDir = other.yDir

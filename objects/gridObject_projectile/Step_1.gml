@@ -20,9 +20,8 @@ if moveIter>=moveTime {
 	
 	if instance_exists(gObj){
 		//if instance_exists(parent) gridObject_applyDamage(parent,gObj)
-		with gObj{
-			gridObject_addStatus(statuses.poison,2)		
-		}
+		script_execute(projectileScript,gObj)
+		
 		instance_destroy()
 	} else {
 		with gridLevel {

@@ -60,7 +60,7 @@ if argument0 {
 			yDir = sign(yy)
 		
 			//show_debug_message("Schut")
-			return [actionSetup_projectile,[gridObject_projectile]]
+			return [actionSetup_projectile,[spr_poison, projectileEffect_poison]]
 		}
 		return [actionSetup_move,[gx,gy]]
 	}

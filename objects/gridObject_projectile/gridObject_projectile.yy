@@ -61,7 +61,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "9184de51-01d5-40cc-9a29-dc681f1f29f8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "projectileEffect_poison",
+            "varName": "projectileScript",
+            "varType": 5
+        }
+    ],
     "solid": false,
     "spriteId": "3e9ee84f-4630-4df4-b037-1f148fa473da",
     "visible": true
