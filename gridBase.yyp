@@ -1935,6 +1935,14 @@
             }
         },
         {
+            "Key": "fcf39c0c-06e0-4b02-a9a8-7eb474ff6fad",
+            "Value": {
+                "id": "76407224-a99e-40bd-a9dc-f650767786b7",
+                "resourcePath": "shaders\\shd_Poison\\shd_Poison.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "fdbc5c45-38bd-4262-b3b1-5fc8ae715b8d",
             "Value": {
                 "id": "2c7988b9-c0ef-4b40-badb-05c91e1ad944",

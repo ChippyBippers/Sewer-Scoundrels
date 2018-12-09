@@ -43,3 +43,6 @@ spriteRef_idle = noone
 spriteRef_walk_up = noone
 spriteRef_walk_down = noone
 spriteRef_walk_lateral = noone
+
+// for the shader
+brightness = 0;
