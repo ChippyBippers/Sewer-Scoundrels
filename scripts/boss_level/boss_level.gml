@@ -56,13 +56,15 @@ for (var i = 0; i < ds_list_size(rooms); i++) {
 
 if r_point != undefined {
 	player.gx = 7
-	player.gy = 7
+	player.gy = 9
 	player.x = 7 * 16
-	player.y = 7 * 16
+	player.y = 9 * 16
 }
 
 // Add "Boss Enemies"
-var enemy = spawn_alligator(5,5)
+spawn_alligator(7, 7)
+spawn_bug(5, 8)
+spawn_bug(9, 8)
 
 for (var i = 0; i < 2; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)

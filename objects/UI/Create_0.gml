@@ -1,6 +1,8 @@
 fnt_pressStart = font_add("font.ttf", 6, false, false, 32, 128)
 draw_set_font(fnt_pressStart)
+
 menu_open = false
+player_dead = false
 
 audio_on = true
 volume = 0.5

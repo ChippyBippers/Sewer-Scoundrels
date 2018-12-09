@@ -6,4 +6,5 @@ with gridLevel {
 		new_level()
 	else
 		boss_level()
+	camera_updatePos(baseCamera)
 }

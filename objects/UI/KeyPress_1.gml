@@ -2,7 +2,7 @@ if keyboard_key == vk_escape {
 	menu_hovered = 0
 	menu_open = not menu_open
 }
-if menu_open {
+if menu_open or player_dead {
 	if keyboard_key == vk_down {
 		menu_hovered += 1
 		audio_play_sound(snd_select, 0, false)
