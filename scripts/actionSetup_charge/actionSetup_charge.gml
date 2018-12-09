@@ -19,17 +19,7 @@ moveLimit = max(xDir*(tgx-gx),yDir*(tgy-gy))
 
 if xDir != 0 || yDir != 0 {
 	//sprite setting
-	var walkSprite = spriteRef_walk_lateral;
-	switch(facingAngle){
-		case 90:
-			walkSprite = spriteRef_walk_up
-			break;
-		case 270:
-			walkSprite = spriteRef_walk_down
-			break;
-	}
-
-	if sprite_exists(walkSprite) then sprite_index = walkSprite
+	sprite_index = alligator_charge
 
 	//updating the pathfinding grid
 	with gridRouter{

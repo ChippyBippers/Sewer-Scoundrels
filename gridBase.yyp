@@ -1599,6 +1599,14 @@
             }
         },
         {
+            "Key": "d08fd7e1-5d6c-4db7-b1b1-20432ac82166",
+            "Value": {
+                "id": "acfa26fb-9f25-46f8-a958-306f55fe66b9",
+                "resourcePath": "sprites\\alligator_charge\\alligator_charge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d3d65345-5492-4e92-8d15-a154b0b5a4d1",
             "Value": {
                 "id": "10c79c85-dd7e-433a-975c-875433c865e5",
