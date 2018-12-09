@@ -49,7 +49,7 @@ if rat_count > 0
 if bug_count > 0
 	add_enemies(rooms, bug_count, spawn_bug);
 
-for (var i = 0; i < 2; i += 1) {
+for (var i = 0; i < ceil(level/2); i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)
 	ran_room = ds_list_find_value(rooms, r)
 	r_point = room_random_point(ran_room, gridObject_base)
@@ -58,6 +58,14 @@ for (var i = 0; i < 2; i += 1) {
 	}
 }
 
+for (var i = 0; i < ceil(level/2); i += 1) {
+	r = irandom_range(0, ds_list_size(rooms) - 1)
+	ran_room = ds_list_find_value(rooms, r)
+	r_point = room_random_point(ran_room, gridObject_base)
+	if r_point != undefined {
+		spawn_cheese(r_point[0],r_point[1])
+	}
+}
 
 for (var i = 0; i < 1; i += 1) {
 	r = irandom_range(0, ds_list_size(rooms) - 1)
