@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "3e306d4f-21a0-4ede-afea-5df97c555b6f",
+            "Value": {
+                "id": "7ab489b9-42e2-4fba-97ea-6bab63e1df89",
+                "resourcePath": "sounds\\snd_Spirit_Waltz\\snd_Spirit_Waltz.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3e9a5c60-f9ed-4f09-90dd-23ab364aca13",
             "Value": {
                 "id": "be235714-3e98-4579-9349-7d17ef45baa1",
@@ -932,6 +940,14 @@
                 "id": "a36ac9bd-8d37-499d-9ed0-b7446d5ca3dd",
                 "resourcePath": "sprites\\spr_attack\\spr_attack.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "74d926fe-76fa-4111-8b32-7d560645de4c",
+            "Value": {
+                "id": "f072e4b4-7779-41a9-b2e1-f62007fec893",
+                "resourcePath": "sounds\\snd_boss\\snd_boss.yy",
+                "resourceType": "GMSound"
             }
         },
         {

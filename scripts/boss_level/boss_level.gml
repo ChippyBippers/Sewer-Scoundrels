@@ -1,4 +1,8 @@
+audio_stop_all()
+audio_play_sound(snd_boss, 1, false)
+
 level += 1
+
 
 width = 15
 height = 15
