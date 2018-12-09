@@ -68,7 +68,7 @@ draw_text(baseCamera.width - 32, 2,"F" + string(gridLevel.level))
 draw_set_color(make_color_rgb(226, 83, 34))
 draw_text(baseCamera.width - 32, 1,"F" + string(gridLevel.level))
 
-if menu_open {
+if menu_open and not player_dead {
 	// Draw menu background
 	draw_set_color(make_color_rgb(56, 56, 76))
 	draw_rectangle(32-1, 32-1, baseCamera.width - 32 + 1, baseCamera.height - 32 + 1, false)
@@ -102,4 +102,24 @@ if menu_open {
 	
 	draw_text_transformed(120, baseCamera.height - 56, "Use Item: Z", 0.5, 0.5, 0)
 	draw_text_transformed(120, baseCamera.height - 48, "Cycle Items: Q <-> E", 0.5, 0.5, 0)
+}
+
+
+if player_dead {
+	draw_set_color(make_color_rgb(253, 245, 241))
+	draw_set_alpha((((2*room_speed)-(alarm[0]))/(room_speed)))
+	draw_text_transformed(15, 40, "Game Over", 3, 3, 0)
+	draw_set_alpha(1)
+}
+
+
+valid = false
+with gridObject_character {
+	if deciderScript == decider_player {
+		other.valid = true
+	}
+}
+if not valid and not player_dead {
+	player_dead = true
+	alarm[0] = 2*room_speed
 }
