@@ -16,5 +16,3 @@ with gridRouter{
 		if good mp_grid_clear_cell(gridMap,other.gx,other.gy)	
 	}
 }
-
-

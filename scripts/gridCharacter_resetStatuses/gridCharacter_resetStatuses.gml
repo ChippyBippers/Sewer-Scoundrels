@@ -1,3 +1,4 @@
 //cheeky
-ds_map_destroy(myStatuses)
-myStatuses = ds_map_create()
+ds_map_clear(myStatuses)
+
+show_debug_message(string(id)+" status efffects have been reset")

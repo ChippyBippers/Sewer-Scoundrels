@@ -9,6 +9,8 @@ with gridScheduler {
 with gridObject_character {
 	if deciderScript != decider_player {
 		instance_destroy(self)
+	} else {
+		gridCharacter_resetStatuses()	
 	}
 }
 with gridObject_item {

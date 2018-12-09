@@ -26,7 +26,7 @@ with tile {
 gridCharacter_applyStatuses()
 
 //hp regeneration(only for players)
-if deciderScript = decider_player{
+if deciderScript = decider_player and ds_exists(myStatuses,ds_type_map){
 	var hpRate = 0.05;
 
 	hpRate *= !tookDamage * !gridObject_hasStatus(statuses.poison)

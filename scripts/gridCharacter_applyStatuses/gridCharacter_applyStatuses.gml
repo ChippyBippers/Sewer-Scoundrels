@@ -1,7 +1,9 @@
 if gridObject_hasStatus(statuses.poison) {
+	myStatuses[? statuses.poison]-=1
+	gridObject_character.brightness = 0.7;
 	if !invincible{
-		gridObject_damage(1)
-		gridObject_character.brightness = 0.7;
+		return gridObject_damage(1)
 	}
-	myStatuses[? statuses.poison]-=1	
 }
+
+return false
