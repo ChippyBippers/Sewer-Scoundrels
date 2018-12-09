@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "7e8b7199-920d-478f-8c0a-8cc791ca0764",
+            "Value": {
+                "id": "ea05854f-52c0-40ec-a8f0-625f778a503e",
+                "resourcePath": "scripts\\gridCharacter_updateShaders\\gridCharacter_updateShaders.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7ef75365-6ff6-4298-9cc4-e57a155b09f2",
             "Value": {
                 "id": "ba7845b4-a16c-4756-9608-011216d7dfd7",
@@ -2010,6 +2018,7 @@
         "3dbc76ad-37ae-4044-92a0-d143fd3731ed",
         "35fd0e5d-ac0c-4607-be81-19d15bddbf14",
         "9755c62a-bc1e-41f2-9187-ca96fb329fcc",
+        "7e8b7199-920d-478f-8c0a-8cc791ca0764",
         "54b14f9f-60fb-450a-a23e-79b5be1f1253",
         "a62cf6a8-d057-4f02-90e0-402c3a21f978",
         "f89f0d0f-b901-430b-9ff8-e32a8e1f681d",

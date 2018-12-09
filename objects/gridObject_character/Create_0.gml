@@ -45,4 +45,6 @@ spriteRef_walk_down = noone
 spriteRef_walk_lateral = noone
 
 // for the shader
+myShader = noone
+myColor = noone
 brightness = 0;

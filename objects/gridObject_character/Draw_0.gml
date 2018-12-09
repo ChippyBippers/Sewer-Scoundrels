@@ -7,13 +7,13 @@ if image_xscale = -1 {
 }
 
 //var drawColor = gridObject_hasStatus(statuses.poison)?c_fuchsia: c_white;
-draw_sprite_ext(sprite_index,image_index,x+sxx,y,image_xscale,1,renderAngle,c_white,1);
+draw_sprite_ext(sprite_index,image_index,x+sxx,y,image_xscale,1,renderAngle,myColor,1);
 
-if(brightness > 0 && gridObject_hasStatus(statuses.poison))
+if(brightness > 0 && myShader != noone)
 {
 	brightness -= 0.02;
 	gpu_set_blendmode(bm_add);
-	shader_set(shd_Poison);
+	shader_set(myShader);
 
 	sAlpha = shader_get_uniform(shd_Poison, "shadeAlpha");
 	rCol = shader_get_uniform(shd_Poison, "rVal");
@@ -25,10 +25,11 @@ if(brightness > 0 && gridObject_hasStatus(statuses.poison))
 	shader_set_uniform_f(bCol, color_get_blue(c_fuchsia));
 	shader_set_uniform_f(sAlpha, brightness);
 
-	draw_sprite_ext(sprite_index,image_index,x+sxx,y,image_xscale,1,renderAngle,c_white,1);
+	draw_sprite_ext(sprite_index,image_index,x+sxx,y,image_xscale,1,renderAngle,myColor,1);
 	shader_reset();
 	gpu_set_blendmode(bm_normal);
 }
+
 //draw_sprite_ext(spr_directionIndicator,0,x+8+12*xDir,y+8+12*yDir,1,1,facingAngle,c_white,1)
 
 /*

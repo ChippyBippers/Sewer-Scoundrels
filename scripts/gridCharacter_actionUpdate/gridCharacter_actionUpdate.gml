@@ -13,10 +13,11 @@ if !actionUpdated{
 			
 			//reset sprite
 			if sprite_exists(spriteRef_idle) then sprite_index = spriteRef_idle
-			
+			//update personal shader
+			gridCharacter_updateShaders()
 			
 			var schedulerID = gridScheduler.id;
-				
+			
 			if myTurn then gridCharacter_endOfTurn()
 				
 			if gridScheduler.id = schedulerID then gridScheduler_poke(noone)
