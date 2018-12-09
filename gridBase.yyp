@@ -1687,6 +1687,14 @@
             }
         },
         {
+            "Key": "c7dc6983-2608-483b-9328-b0fd6cb0133c",
+            "Value": {
+                "id": "4f8d1726-6d6f-4fdb-90c5-ae31100d507d",
+                "resourcePath": "sounds\\snd_snow\\snd_snow.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c9be7597-f9cc-492a-ab26-2ba3a6ab9820",
             "Value": {
                 "id": "5f0140d6-f6a6-47da-9dcb-b159e0a5da3c",

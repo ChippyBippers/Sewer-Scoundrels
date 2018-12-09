@@ -5,7 +5,7 @@ menu_open = false
 player_dead = false
 
 audio_on = true
-volume = 0.5
+volume = 0.4
 audio_master_gain(volume)
 
 menu_hovered = 0
