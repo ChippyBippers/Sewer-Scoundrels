@@ -53,5 +53,14 @@ if counter = 0 {
 } else if counter = 1 {
 	canCharge = false
 	
+	var dx = player.gx-gx, dy = player.gy-gy,
+		xxx = sign(dx), yyy = sign(dy);
+	
+	if (abs(dx)<=1 && abs(dy)<=1){
+		xDir = xxx
+		yDir = yyy
+		return [actionSetup_basicAttack,[xDir,yDir]]
+	}
+	
 	return [actionSetup_charge,[chargeX,chargeY]]
 }

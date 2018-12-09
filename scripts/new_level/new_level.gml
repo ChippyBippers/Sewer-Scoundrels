@@ -39,7 +39,8 @@ if r_point != undefined {
 }
 
 with player{
-	gridCharacter_resetStatuses()	
+	gridCharacter_resetStatuses()
+	gridCharacter_updateShaders()
 }
 
 if rat_count > 0
