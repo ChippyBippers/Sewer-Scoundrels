@@ -2,7 +2,7 @@
 {
     "name": "rEnd1",
     "id": "2dd98edd-2357-4f2b-9e82-0bf4dad786c6",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

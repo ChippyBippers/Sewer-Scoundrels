@@ -16,3 +16,7 @@ with gridRouter{
 		if good mp_grid_clear_cell(gridMap,other.gx,other.gy)	
 	}
 }
+
+if deciderScript = decider_alligator {
+	room_goto(rEnd1)	
+}
