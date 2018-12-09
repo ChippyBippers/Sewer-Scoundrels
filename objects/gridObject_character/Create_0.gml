@@ -37,6 +37,7 @@ itemMap_sprites = ds_map_create()
 
 myStatuses = ds_map_create()
 
+invincible = false
 //sprite references
 spriteRef_idle = noone
 

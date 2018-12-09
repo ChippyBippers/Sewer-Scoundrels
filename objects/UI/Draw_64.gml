@@ -26,7 +26,11 @@ with gridObject_character {
 		// Draw Healthbar
 		draw_set_color(make_color_rgb(37, 125, 44))
 		draw_rectangle(hp_bar_pos[0], hp_bar_pos[1], hp_bar_pos[0] + hp_bar_size[0], hp_bar_pos[1] + hp_bar_size[1], false)
-		draw_set_color(make_color_rgb(104, 178, 41))
+		
+		var regularCol = make_color_rgb(104, 178, 41),
+			invincibleCol = make_color_rgb(23, 224, 234);
+		
+		draw_set_color(invincible? invincibleCol: regularCol)
 		draw_rectangle(hp_bar_pos[0], hp_bar_pos[1], hp_bar_pos[0] + hp_bar_size[0] * (hp/maxHP), hp_bar_pos[1] + hp_bar_size[1], false)
 		
 		// Draw Item Boxes

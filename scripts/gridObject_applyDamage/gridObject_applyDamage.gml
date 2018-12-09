@@ -5,7 +5,7 @@ var sender = argument0,
 var damage = sender.atk;
 
 with receiver{
-	gridObject_damage(damage)
+	if !invincible gridObject_damage(damage)
 }
 
 show_debug_message(string(sender)+" inflicted "+string(damage)+" onto "+string(receiver))
