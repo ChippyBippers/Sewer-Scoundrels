@@ -1,1 +1,1 @@
-actionSetup_projectile([spr_poison, projectileEffect_poison])
+actionSetup_projectile([spr_poison, projectileEffect_rock, false])

@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "43e38023-fdf4-46d7-8fa8-e776de44d377",
+            "Value": {
+                "id": "709b5994-e6c9-4395-84b1-c51aad53ddd9",
+                "resourcePath": "sprites\\spr_rocky\\spr_rocky.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46b2aee1-cae8-4d7e-b6f6-8fea217da1cf",
             "Value": {
                 "id": "9bfcebf5-f891-4ab0-ad88-02721574f6b8",
