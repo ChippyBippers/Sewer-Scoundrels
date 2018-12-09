@@ -1,0 +1,1 @@
+actionSetup_projectile([spr_rocky, projectileEffect_rock, false])

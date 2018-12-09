@@ -54,7 +54,7 @@ for (var i = 0; i < 2; i += 1) {
 	ran_room = ds_list_find_value(rooms, r)
 	r_point = room_random_point(ran_room, gridObject_base)
 	if r_point != undefined {
-		instance_create_layer(16 * r_point[0], 16 * r_point[1], "Instances", gridObject_item)
+		spawn_rock(r_point[0],r_point[1])
 	}
 }
 

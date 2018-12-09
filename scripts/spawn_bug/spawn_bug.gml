@@ -1,6 +1,6 @@
 enemy = gridObject_spawn_character(argument0,argument1,"instances",decider_distanceAndShoot)
 		
-gridObject_setStats(enemy,4,true,1,0)
+gridObject_setStats(enemy,1,true,1,0)
 with enemy {
 	sprite_index = bug_idle
 	spriteRef_idle = bug_idle

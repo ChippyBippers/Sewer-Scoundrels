@@ -298,7 +298,7 @@
             "Key": "22d9bfb3-6728-4992-b3a0-5ec731b45def",
             "Value": {
                 "id": "640f361d-4483-462b-8591-324a35bb7d8a",
-                "resourcePath": "scripts\\itemUseScript_rock\\itemUseScript_rock.yy",
+                "resourcePath": "scripts\\itemUseSetup_rock\\itemUseSetup_rock.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -315,6 +315,14 @@
             "Value": {
                 "id": "817bc0ed-cf74-4333-910a-431c14674f33",
                 "resourcePath": "scripts\\gridObject_spawn_item\\gridObject_spawn_item.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2485d40b-64c2-44cc-94e8-f1bcad5eb7ba",
+            "Value": {
+                "id": "9d7cb4e1-7a65-4415-a99a-35c59925504b",
+                "resourcePath": "scripts\\spawn_rock\\spawn_rock.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1247,6 +1255,14 @@
             }
         },
         {
+            "Key": "a5501bda-b733-4515-a5c2-07759acf84d1",
+            "Value": {
+                "id": "2aa9a380-fd4a-4996-8c6d-0cb7d8fb39d7",
+                "resourcePath": "scripts\\spawn_cheese\\spawn_cheese.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a5ce735f-9374-4f92-bc95-0215e44f5422",
             "Value": {
                 "id": "fe33da6b-4bf0-488f-8772-fb17a6189616",
@@ -2079,6 +2095,8 @@
         "f6d8903f-04e1-4707-b171-c46355d70db1",
         "3e9a5c60-f9ed-4f09-90dd-23ab364aca13",
         "37e725b1-44d8-4e1d-ad62-e10c38e2179a",
+        "a5501bda-b733-4515-a5c2-07759acf84d1",
+        "2485d40b-64c2-44cc-94e8-f1bcad5eb7ba",
         "b1def4e9-b9cf-47bd-aacd-005b2f51c4b1",
         "ab74fc8d-f7b8-490f-ab1e-176c2b26b5f5",
         "3dbc76ad-37ae-4044-92a0-d143fd3731ed",
