@@ -1,0 +1,27 @@
+SPRITES
+***********************************************************************************
+END GAME GRASS --------------------------------
+
+Simplified Platformer Pack
+	by Kenney Vleugels (Kenney.nl) https://www.kenney.nl/assets/simplified-platformer-pack
+
+Ladder
+	by navaneethks https://openclipart.org/detail/167237/ladder
+	
+MUSIC
+***********************************************************************************
+BOSS ROOM -------------------------------------
+
+Heroic Demise [Updated Version]
+	by Matthew Pablo https://opengameart.org/content/heroic-demise-updated-version
+
+DUNGEON ---------------------------------------
+
+Covert Operation
+	by artisticdude https://opengameart.org/content/covert-operations
+
+Spirit Waltz
+	by HorrorPen https://opengameart.org/content/spirit-waltz
+
+SOUND -----------------------------------------
+	by https://www.freesoundeffects.com/free-track/baligator3-89357/
